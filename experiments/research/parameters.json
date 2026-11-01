@@ -1,0 +1,78 @@
+{
+  "network": {
+    "banks": 50,
+    "seed": 42,
+    "topology": "core_periphery"
+  },
+  "impact_ranking": {
+    "recovery": 0.4,
+    "external_impairment": 0
+  },
+  "sensitivity": {
+    "recoveries": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8,
+      1.0
+    ],
+    "multipliers": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5
+    ]
+  },
+  "topology_ensemble": {
+    "banks": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "impairment": 0.08,
+    "recovery": 0.4
+  },
+  "monte_carlo": {
+    "scenario": {
+      "name": "Conditional independent-default experiment",
+      "recovery": 0.4,
+      "external_impairment": 0.03,
+      "initial_defaults": []
+    },
+    "trials": 500,
+    "seed": 20261030,
+    "pd_override": 0.02
+  },
+  "baseline_comparison": {
+    "chain": {
+      "name": "Hand chain baseline",
+      "recovery": 0.4,
+      "external_impairment": 0,
+      "initial_defaults": [
+        "B"
+      ]
+    },
+    "seed42": {
+      "name": "Seed42 baseline comparison",
+      "recovery": 0.4,
+      "external_impairment": 0.10177487707278178,
+      "initial_defaults": []
+    }
+  }
+}

@@ -1,0 +1,1671 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "units": "INR crore (synthetic nominal amounts)",
+  "seed": 42,
+  "topology": "core_periphery",
+  "banks": [
+    {
+      "id": "B001",
+      "name": "Atlas Synthetic Bank 01",
+      "tier": "core",
+      "external_assets": 657.8329938690639,
+      "interbank_assets": 195.22317764638274,
+      "deposits": 481.0911985082678,
+      "interbank_liabilities": 288.57834239968554,
+      "equity": 83.38663060749334,
+      "pd": 0.02
+    },
+    {
+      "id": "B002",
+      "name": "Atlas Synthetic Bank 02",
+      "tier": "core",
+      "external_assets": 632.026195511093,
+      "interbank_assets": 346.37024562223473,
+      "deposits": 718.5531647109799,
+      "interbank_liabilities": 161.92667469506515,
+      "equity": 97.91660172728264,
+      "pd": 0.02
+    },
+    {
+      "id": "B003",
+      "name": "Atlas Synthetic Bank 03",
+      "tier": "core",
+      "external_assets": 643.4871141553733,
+      "interbank_assets": 217.47532908040805,
+      "deposits": 519.1669916175365,
+      "interbank_liabilities": 233.8076660940179,
+      "equity": 107.98778552422704,
+      "pd": 0.02
+    },
+    {
+      "id": "B004",
+      "name": "Atlas Synthetic Bank 04",
+      "tier": "core",
+      "external_assets": 880.7894167904857,
+      "interbank_assets": 349.96666610057355,
+      "deposits": 802.6154036453962,
+      "interbank_liabilities": 320.6830216096639,
+      "equity": 107.457657635999,
+      "pd": 0.02
+    },
+    {
+      "id": "B005",
+      "name": "Atlas Synthetic Bank 05",
+      "tier": "core",
+      "external_assets": 749.708798443365,
+      "interbank_assets": 361.9675992176424,
+      "deposits": 809.6657659450216,
+      "interbank_liabilities": 159.39138380993873,
+      "equity": 142.61924790604698,
+      "pd": 0.02
+    },
+    {
+      "id": "B006",
+      "name": "Atlas Synthetic Bank 06",
+      "tier": "core",
+      "external_assets": 548.6210868160188,
+      "interbank_assets": 505.04859634960707,
+      "deposits": 627.1327407284332,
+      "interbank_liabilities": 314.2003738602139,
+      "equity": 112.33656857697879,
+      "pd": 0.02
+    },
+    {
+      "id": "B007",
+      "name": "Atlas Synthetic Bank 07",
+      "tier": "core",
+      "external_assets": 632.131212278916,
+      "interbank_assets": 164.26329214288717,
+      "deposits": 376.3073963568949,
+      "interbank_liabilities": 325.2096157993484,
+      "equity": 94.87749226555985,
+      "pd": 0.02
+    },
+    {
+      "id": "B008",
+      "name": "Atlas Synthetic Bank 08",
+      "tier": "core",
+      "external_assets": 468.0585443659776,
+      "interbank_assets": 293.32105293641865,
+      "deposits": 488.0747726565688,
+      "interbank_liabilities": 186.72661321870177,
+      "equity": 86.57821142712558,
+      "pd": 0.02
+    },
+    {
+      "id": "B009",
+      "name": "Atlas Synthetic Bank 09",
+      "tier": "core",
+      "external_assets": 647.6567855140994,
+      "interbank_assets": 379.952803912257,
+      "deposits": 566.5942907482873,
+      "interbank_liabilities": 357.3382246824008,
+      "equity": 103.67707399566832,
+      "pd": 0.02
+    },
+    {
+      "id": "B010",
+      "name": "Atlas Synthetic Bank 10",
+      "tier": "core",
+      "external_assets": 1036.4912267065326,
+      "interbank_assets": 274.8330407426789,
+      "deposits": 827.9077157664924,
+      "interbank_liabilities": 364.7356693526269,
+      "equity": 118.68088233009239,
+      "pd": 0.02
+    },
+    {
+      "id": "B011",
+      "name": "Atlas Synthetic Bank 11",
+      "tier": "periphery",
+      "external_assets": 645.7310591505857,
+      "interbank_assets": 39.87113653916315,
+      "deposits": 576.2590623257433,
+      "interbank_liabilities": 14.074891870821364,
+      "equity": 95.2682414931841,
+      "pd": 0.02
+    },
+    {
+      "id": "B012",
+      "name": "Atlas Synthetic Bank 12",
+      "tier": "periphery",
+      "external_assets": 678.3628158558623,
+      "interbank_assets": 68.12769685690708,
+      "deposits": 644.600839531396,
+      "interbank_liabilities": 47.19484901302245,
+      "equity": 54.694824168350934,
+      "pd": 0.02
+    },
+    {
+      "id": "B013",
+      "name": "Atlas Synthetic Bank 13",
+      "tier": "periphery",
+      "external_assets": 623.8921284138451,
+      "interbank_assets": 37.1942174172762,
+      "deposits": 596.6407753215317,
+      "interbank_liabilities": 23.08010766950543,
+      "equity": 41.36546284008415,
+      "pd": 0.02
+    },
+    {
+      "id": "B014",
+      "name": "Atlas Synthetic Bank 14",
+      "tier": "periphery",
+      "external_assets": 451.0392895066791,
+      "interbank_assets": 52.30481820397456,
+      "deposits": 353.35792674822915,
+      "interbank_liabilities": 84.72325347205984,
+      "equity": 65.26292749036463,
+      "pd": 0.02
+    },
+    {
+      "id": "B015",
+      "name": "Atlas Synthetic Bank 15",
+      "tier": "periphery",
+      "external_assets": 585.7802281306567,
+      "interbank_assets": 0.0,
+      "deposits": 468.70139860528406,
+      "interbank_liabilities": 56.96651111270083,
+      "equity": 60.11231841267187,
+      "pd": 0.02
+    },
+    {
+      "id": "B016",
+      "name": "Atlas Synthetic Bank 16",
+      "tier": "periphery",
+      "external_assets": 363.3252137954413,
+      "interbank_assets": 122.99870395527012,
+      "deposits": 425.54132801491915,
+      "interbank_liabilities": 0.0,
+      "equity": 60.78258973579224,
+      "pd": 0.02
+    },
+    {
+      "id": "B017",
+      "name": "Atlas Synthetic Bank 17",
+      "tier": "periphery",
+      "external_assets": 570.407093118003,
+      "interbank_assets": 49.34498702584787,
+      "deposits": 529.1933706941576,
+      "interbank_liabilities": 30.149970946481538,
+      "equity": 60.408738503211765,
+      "pd": 0.02
+    },
+    {
+      "id": "B018",
+      "name": "Atlas Synthetic Bank 18",
+      "tier": "periphery",
+      "external_assets": 732.1171349420864,
+      "interbank_assets": 31.37111888027196,
+      "deposits": 612.3832002687026,
+      "interbank_liabilities": 91.25074947677355,
+      "equity": 59.85430407688232,
+      "pd": 0.02
+    },
+    {
+      "id": "B019",
+      "name": "Atlas Synthetic Bank 19",
+      "tier": "periphery",
+      "external_assets": 276.3738404758739,
+      "interbank_assets": 16.150846786502495,
+      "deposits": 227.27181797738285,
+      "interbank_liabilities": 32.65851043863023,
+      "equity": 32.59435884636333,
+      "pd": 0.02
+    },
+    {
+      "id": "B020",
+      "name": "Atlas Synthetic Bank 20",
+      "tier": "periphery",
+      "external_assets": 717.7687694532152,
+      "interbank_assets": 39.6362873095332,
+      "deposits": 663.8070020745118,
+      "interbank_liabilities": 33.17188096724153,
+      "equity": 60.426173720995074,
+      "pd": 0.02
+    },
+    {
+      "id": "B021",
+      "name": "Atlas Synthetic Bank 21",
+      "tier": "periphery",
+      "external_assets": 324.0953591491615,
+      "interbank_assets": 81.63722747003939,
+      "deposits": 340.0840424133641,
+      "interbank_liabilities": 36.776650735556956,
+      "equity": 28.87189347027989,
+      "pd": 0.02
+    },
+    {
+      "id": "B022",
+      "name": "Atlas Synthetic Bank 22",
+      "tier": "periphery",
+      "external_assets": 741.286910038765,
+      "interbank_assets": 0.0,
+      "deposits": 565.4066981444203,
+      "interbank_liabilities": 117.97695463826726,
+      "equity": 57.90325725607744,
+      "pd": 0.02
+    },
+    {
+      "id": "B023",
+      "name": "Atlas Synthetic Bank 23",
+      "tier": "periphery",
+      "external_assets": 464.54538506947785,
+      "interbank_assets": 33.67407849459953,
+      "deposits": 391.0353440233899,
+      "interbank_liabilities": 37.79719537078955,
+      "equity": 69.38692416989797,
+      "pd": 0.02
+    },
+    {
+      "id": "B024",
+      "name": "Atlas Synthetic Bank 24",
+      "tier": "periphery",
+      "external_assets": 268.92504017717584,
+      "interbank_assets": 54.300651050727396,
+      "deposits": 177.19495698305195,
+      "interbank_liabilities": 112.24754467005188,
+      "equity": 33.78318957479939,
+      "pd": 0.02
+    },
+    {
+      "id": "B025",
+      "name": "Atlas Synthetic Bank 25",
+      "tier": "periphery",
+      "external_assets": 442.04373308794754,
+      "interbank_assets": 117.6391724999874,
+      "deposits": 479.6640121533442,
+      "interbank_liabilities": 10.284759600227368,
+      "equity": 69.73413383436333,
+      "pd": 0.02
+    },
+    {
+      "id": "B026",
+      "name": "Atlas Synthetic Bank 26",
+      "tier": "periphery",
+      "external_assets": 402.62922143347055,
+      "interbank_assets": 36.57523839431504,
+      "deposits": 341.209917168255,
+      "interbank_liabilities": 57.22437467944317,
+      "equity": 40.77016798008738,
+      "pd": 0.02
+    },
+    {
+      "id": "B027",
+      "name": "Atlas Synthetic Bank 27",
+      "tier": "periphery",
+      "external_assets": 309.6436177817825,
+      "interbank_assets": 124.90318179988485,
+      "deposits": 315.44275211526525,
+      "interbank_liabilities": 67.27772845240746,
+      "equity": 51.826319013994656,
+      "pd": 0.02
+    },
+    {
+      "id": "B028",
+      "name": "Atlas Synthetic Bank 28",
+      "tier": "periphery",
+      "external_assets": 654.6624854266818,
+      "interbank_assets": 24.992461697319918,
+      "deposits": 558.3723527587433,
+      "interbank_liabilities": 73.07258537320018,
+      "equity": 48.210008992058206,
+      "pd": 0.02
+    },
+    {
+      "id": "B029",
+      "name": "Atlas Synthetic Bank 29",
+      "tier": "periphery",
+      "external_assets": 432.28235825169605,
+      "interbank_assets": 44.40041429601088,
+      "deposits": 348.1502443318309,
+      "interbank_liabilities": 65.88096755811911,
+      "equity": 62.65156065775691,
+      "pd": 0.02
+    },
+    {
+      "id": "B030",
+      "name": "Atlas Synthetic Bank 30",
+      "tier": "periphery",
+      "external_assets": 233.40551849764756,
+      "interbank_assets": 32.09043772639305,
+      "deposits": 161.30413486378862,
+      "interbank_liabilities": 81.91651797596462,
+      "equity": 22.27530338428735,
+      "pd": 0.02
+    },
+    {
+      "id": "B031",
+      "name": "Atlas Synthetic Bank 31",
+      "tier": "periphery",
+      "external_assets": 521.243141773622,
+      "interbank_assets": 13.446001829213508,
+      "deposits": 422.3470012155808,
+      "interbank_liabilities": 65.96988499472086,
+      "equity": 46.37225739253384,
+      "pd": 0.02
+    },
+    {
+      "id": "B032",
+      "name": "Atlas Synthetic Bank 32",
+      "tier": "periphery",
+      "external_assets": 482.6086568094842,
+      "interbank_assets": 30.264751031151,
+      "deposits": 280.2419211990914,
+      "interbank_liabilities": 182.98380276176607,
+      "equity": 49.647683879777745,
+      "pd": 0.02
+    },
+    {
+      "id": "B033",
+      "name": "Atlas Synthetic Bank 33",
+      "tier": "periphery",
+      "external_assets": 303.5057238146579,
+      "interbank_assets": 63.126977574589525,
+      "deposits": 275.4324903262137,
+      "interbank_liabilities": 53.668014354326345,
+      "equity": 37.53219670870738,
+      "pd": 0.02
+    },
+    {
+      "id": "B034",
+      "name": "Atlas Synthetic Bank 34",
+      "tier": "periphery",
+      "external_assets": 606.8547973415533,
+      "interbank_assets": 43.23489928523415,
+      "deposits": 512.9928085118863,
+      "interbank_liabilities": 68.1720406192791,
+      "equity": 68.92484749562206,
+      "pd": 0.02
+    },
+    {
+      "id": "B035",
+      "name": "Atlas Synthetic Bank 35",
+      "tier": "periphery",
+      "external_assets": 228.69124138069571,
+      "interbank_assets": 33.57876408612,
+      "deposits": 201.3356515820286,
+      "interbank_liabilities": 27.48110940850373,
+      "equity": 33.45324447628344,
+      "pd": 0.02
+    },
+    {
+      "id": "B036",
+      "name": "Atlas Synthetic Bank 36",
+      "tier": "periphery",
+      "external_assets": 301.38924258080294,
+      "interbank_assets": 33.8027557017584,
+      "deposits": 239.420337399297,
+      "interbank_liabilities": 55.15143196268444,
+      "equity": 40.620228920579905,
+      "pd": 0.02
+    },
+    {
+      "id": "B037",
+      "name": "Atlas Synthetic Bank 37",
+      "tier": "periphery",
+      "external_assets": 400.78691347866095,
+      "interbank_assets": 98.74509207364548,
+      "deposits": 385.80283498216147,
+      "interbank_liabilities": 52.47610255194323,
+      "equity": 61.25306801820173,
+      "pd": 0.02
+    },
+    {
+      "id": "B038",
+      "name": "Atlas Synthetic Bank 38",
+      "tier": "periphery",
+      "external_assets": 339.88008561424675,
+      "interbank_assets": 35.202423123418995,
+      "deposits": 270.5464742608726,
+      "interbank_liabilities": 76.42998874130662,
+      "equity": 28.106045735486514,
+      "pd": 0.02
+    },
+    {
+      "id": "B039",
+      "name": "Atlas Synthetic Bank 39",
+      "tier": "periphery",
+      "external_assets": 432.0654702307682,
+      "interbank_assets": 15.186762335772752,
+      "deposits": 410.5373873129406,
+      "interbank_liabilities": 8.701254811152992,
+      "equity": 28.01359044244735,
+      "pd": 0.02
+    },
+    {
+      "id": "B040",
+      "name": "Atlas Synthetic Bank 40",
+      "tier": "periphery",
+      "external_assets": 273.91353633028336,
+      "interbank_assets": 99.34221280113749,
+      "deposits": 329.24106533798397,
+      "interbank_liabilities": 0.0,
+      "equity": 44.014683793436944,
+      "pd": 0.02
+    },
+    {
+      "id": "B041",
+      "name": "Atlas Synthetic Bank 41",
+      "tier": "periphery",
+      "external_assets": 659.7954928841912,
+      "interbank_assets": 62.882295428104925,
+      "deposits": 625.4119981462648,
+      "interbank_liabilities": 49.23457981620713,
+      "equity": 48.03121034982423,
+      "pd": 0.02
+    },
+    {
+      "id": "B042",
+      "name": "Atlas Synthetic Bank 42",
+      "tier": "periphery",
+      "external_assets": 747.5226661551209,
+      "interbank_assets": 124.01150061644574,
+      "deposits": 651.257111447471,
+      "interbank_liabilities": 112.37992596416348,
+      "equity": 107.89712935993215,
+      "pd": 0.02
+    },
+    {
+      "id": "B043",
+      "name": "Atlas Synthetic Bank 43",
+      "tier": "periphery",
+      "external_assets": 693.1582498383581,
+      "interbank_assets": 77.09857832559936,
+      "deposits": 616.17198222267,
+      "interbank_liabilities": 64.83188719952713,
+      "equity": 89.25295874176022,
+      "pd": 0.02
+    },
+    {
+      "id": "B044",
+      "name": "Atlas Synthetic Bank 44",
+      "tier": "periphery",
+      "external_assets": 594.5129353870842,
+      "interbank_assets": 46.401421356671285,
+      "deposits": 501.80756361334886,
+      "interbank_liabilities": 73.7287483754036,
+      "equity": 65.37804475500312,
+      "pd": 0.02
+    },
+    {
+      "id": "B045",
+      "name": "Atlas Synthetic Bank 45",
+      "tier": "periphery",
+      "external_assets": 565.3541647518546,
+      "interbank_assets": 53.303711267691284,
+      "deposits": 479.72805754395665,
+      "interbank_liabilities": 56.32119128163136,
+      "equity": 82.6086271939578,
+      "pd": 0.02
+    },
+    {
+      "id": "B046",
+      "name": "Atlas Synthetic Bank 46",
+      "tier": "periphery",
+      "external_assets": 341.5765366341206,
+      "interbank_assets": 32.40227876620575,
+      "deposits": 205.80351259174512,
+      "interbank_liabilities": 136.28943585493096,
+      "equity": 31.885866953650282,
+      "pd": 0.02
+    },
+    {
+      "id": "B047",
+      "name": "Atlas Synthetic Bank 47",
+      "tier": "periphery",
+      "external_assets": 228.10792412232993,
+      "interbank_assets": 91.74069946976357,
+      "deposits": 238.22444682724813,
+      "interbank_liabilities": 38.25768864460042,
+      "equity": 43.36648812024498,
+      "pd": 0.02
+    },
+    {
+      "id": "B048",
+      "name": "Atlas Synthetic Bank 48",
+      "tier": "periphery",
+      "external_assets": 417.36298021620155,
+      "interbank_assets": 7.454005121546436,
+      "deposits": 353.9091681331709,
+      "interbank_liabilities": 22.46697391653818,
+      "equity": 48.44084328803893,
+      "pd": 0.02
+    },
+    {
+      "id": "B049",
+      "name": "Atlas Synthetic Bank 49",
+      "tier": "periphery",
+      "external_assets": 636.9448946894171,
+      "interbank_assets": 93.6278072779304,
+      "deposits": 604.4896623262621,
+      "interbank_liabilities": 24.32885921204034,
+      "equity": 101.75418042904501,
+      "pd": 0.02
+    },
+    {
+      "id": "B050",
+      "name": "Atlas Synthetic Bank 50",
+      "tier": "periphery",
+      "external_assets": 434.2712593992075,
+      "interbank_assets": 0.0,
+      "deposits": 185.14764852652993,
+      "interbank_liabilities": 195.29090761346134,
+      "equity": 53.83270325921623,
+      "pd": 0.02
+    }
+  ],
+  "exposures": [
+    {
+      "lender": "B001",
+      "borrower": "B003",
+      "amount": 28.006688661893076
+    },
+    {
+      "lender": "B001",
+      "borrower": "B006",
+      "amount": 30.207561015093233
+    },
+    {
+      "lender": "B001",
+      "borrower": "B010",
+      "amount": 27.45415211692998
+    },
+    {
+      "lender": "B001",
+      "borrower": "B019",
+      "amount": 32.65851043863023
+    },
+    {
+      "lender": "B001",
+      "borrower": "B029",
+      "amount": 26.866622213960706
+    },
+    {
+      "lender": "B001",
+      "borrower": "B030",
+      "amount": 23.812768188802156
+    },
+    {
+      "lender": "B001",
+      "borrower": "B038",
+      "amount": 26.21687501107338
+    },
+    {
+      "lender": "B002",
+      "borrower": "B001",
+      "amount": 8.541767836366631
+    },
+    {
+      "lender": "B002",
+      "borrower": "B003",
+      "amount": 14.5604789253932
+    },
+    {
+      "lender": "B002",
+      "borrower": "B004",
+      "amount": 23.458992323034593
+    },
+    {
+      "lender": "B002",
+      "borrower": "B009",
+      "amount": 35.55455253905975
+    },
+    {
+      "lender": "B002",
+      "borrower": "B010",
+      "amount": 28.76680447007976
+    },
+    {
+      "lender": "B002",
+      "borrower": "B011",
+      "amount": 8.164282746516415
+    },
+    {
+      "lender": "B002",
+      "borrower": "B012",
+      "amount": 25.729623265554153
+    },
+    {
+      "lender": "B002",
+      "borrower": "B021",
+      "amount": 12.760829567298464
+    },
+    {
+      "lender": "B002",
+      "borrower": "B027",
+      "amount": 30.690579592605303
+    },
+    {
+      "lender": "B002",
+      "borrower": "B036",
+      "amount": 33.96042983780615
+    },
+    {
+      "lender": "B002",
+      "borrower": "B037",
+      "amount": 25.770969540649066
+    },
+    {
+      "lender": "B002",
+      "borrower": "B038",
+      "amount": 25.69769134130984
+    },
+    {
+      "lender": "B002",
+      "borrower": "B041",
+      "amount": 16.85070051237849
+    },
+    {
+      "lender": "B002",
+      "borrower": "B043",
+      "amount": 20.61875074064583
+    },
+    {
+      "lender": "B002",
+      "borrower": "B050",
+      "amount": 35.24379238353709
+    },
+    {
+      "lender": "B003",
+      "borrower": "B001",
+      "amount": 30.316211583850478
+    },
+    {
+      "lender": "B003",
+      "borrower": "B006",
+      "amount": 23.191378089354508
+    },
+    {
+      "lender": "B003",
+      "borrower": "B010",
+      "amount": 17.88813351869298
+    },
+    {
+      "lender": "B003",
+      "borrower": "B012",
+      "amount": 6.763290840099403
+    },
+    {
+      "lender": "B003",
+      "borrower": "B018",
+      "amount": 10.005259046423479
+    },
+    {
+      "lender": "B003",
+      "borrower": "B026",
+      "amount": 11.755881633877973
+    },
+    {
+      "lender": "B003",
+      "borrower": "B028",
+      "amount": 18.068424014053615
+    },
+    {
+      "lender": "B003",
+      "borrower": "B031",
+      "amount": 38.04502764766961
+    },
+    {
+      "lender": "B003",
+      "borrower": "B032",
+      "amount": 22.680368820056202
+    },
+    {
+      "lender": "B003",
+      "borrower": "B034",
+      "amount": 13.219405714073087
+    },
+    {
+      "lender": "B003",
+      "borrower": "B039",
+      "amount": 8.701254811152992
+    },
+    {
+      "lender": "B003",
+      "borrower": "B043",
+      "amount": 16.84069336110374
+    },
+    {
+      "lender": "B004",
+      "borrower": "B001",
+      "amount": 33.55057224428699
+    },
+    {
+      "lender": "B004",
+      "borrower": "B002",
+      "amount": 18.416997769367775
+    },
+    {
+      "lender": "B004",
+      "borrower": "B003",
+      "amount": 32.03770321078447
+    },
+    {
+      "lender": "B004",
+      "borrower": "B007",
+      "amount": 33.09467416444076
+    },
+    {
+      "lender": "B004",
+      "borrower": "B008",
+      "amount": 8.878726939454644
+    },
+    {
+      "lender": "B004",
+      "borrower": "B009",
+      "amount": 26.30309134193743
+    },
+    {
+      "lender": "B004",
+      "borrower": "B015",
+      "amount": 38.56836221798888
+    },
+    {
+      "lender": "B004",
+      "borrower": "B018",
+      "amount": 19.074832621624388
+    },
+    {
+      "lender": "B004",
+      "borrower": "B029",
+      "amount": 6.78304311510578
+    },
+    {
+      "lender": "B004",
+      "borrower": "B030",
+      "amount": 37.31559415902575
+    },
+    {
+      "lender": "B004",
+      "borrower": "B042",
+      "amount": 35.928319855036904
+    },
+    {
+      "lender": "B004",
+      "borrower": "B047",
+      "amount": 23.274950652315063
+    },
+    {
+      "lender": "B004",
+      "borrower": "B049",
+      "amount": 24.32885921204034
+    },
+    {
+      "lender": "B004",
+      "borrower": "B050",
+      "amount": 12.410938597164371
+    },
+    {
+      "lender": "B005",
+      "borrower": "B001",
+      "amount": 33.6807764440623
+    },
+    {
+      "lender": "B005",
+      "borrower": "B003",
+      "amount": 22.451001343724425
+    },
+    {
+      "lender": "B005",
+      "borrower": "B004",
+      "amount": 6.185722829989478
+    },
+    {
+      "lender": "B005",
+      "borrower": "B008",
+      "amount": 28.905523475714922
+    },
+    {
+      "lender": "B005",
+      "borrower": "B009",
+      "amount": 38.267369443094715
+    },
+    {
+      "lender": "B005",
+      "borrower": "B010",
+      "amount": 34.02026716210126
+    },
+    {
+      "lender": "B005",
+      "borrower": "B012",
+      "amount": 14.701934907368893
+    },
+    {
+      "lender": "B005",
+      "borrower": "B014",
+      "amount": 6.866377972666923
+    },
+    {
+      "lender": "B005",
+      "borrower": "B022",
+      "amount": 37.91229943883632
+    },
+    {
+      "lender": "B005",
+      "borrower": "B023",
+      "amount": 37.79719537078955
+    },
+    {
+      "lender": "B005",
+      "borrower": "B032",
+      "amount": 23.634536189950428
+    },
+    {
+      "lender": "B005",
+      "borrower": "B035",
+      "amount": 27.48110940850373
+    },
+    {
+      "lender": "B005",
+      "borrower": "B036",
+      "amount": 21.19100212487829
+    },
+    {
+      "lender": "B005",
+      "borrower": "B044",
+      "amount": 19.691787848456553
+    },
+    {
+      "lender": "B005",
+      "borrower": "B045",
+      "amount": 9.180695257504514
+    },
+    {
+      "lender": "B006",
+      "borrower": "B002",
+      "amount": 8.386351442638361
+    },
+    {
+      "lender": "B006",
+      "borrower": "B003",
+      "amount": 13.145625133666561
+    },
+    {
+      "lender": "B006",
+      "borrower": "B004",
+      "amount": 34.28242612422905
+    },
+    {
+      "lender": "B006",
+      "borrower": "B005",
+      "amount": 10.1041305257488
+    },
+    {
+      "lender": "B006",
+      "borrower": "B009",
+      "amount": 12.934452817014876
+    },
+    {
+      "lender": "B006",
+      "borrower": "B010",
+      "amount": 24.201492076277262
+    },
+    {
+      "lender": "B006",
+      "borrower": "B014",
+      "amount": 12.529592632739604
+    },
+    {
+      "lender": "B006",
+      "borrower": "B015",
+      "amount": 10.712233965122548
+    },
+    {
+      "lender": "B006",
+      "borrower": "B017",
+      "amount": 24.71606845942868
+    },
+    {
+      "lender": "B006",
+      "borrower": "B020",
+      "amount": 17.883264484881543
+    },
+    {
+      "lender": "B006",
+      "borrower": "B022",
+      "amount": 26.91557500441642
+    },
+    {
+      "lender": "B006",
+      "borrower": "B024",
+      "amount": 36.927186914303675
+    },
+    {
+      "lender": "B006",
+      "borrower": "B025",
+      "amount": 10.284759600227368
+    },
+    {
+      "lender": "B006",
+      "borrower": "B026",
+      "amount": 36.970178093457235
+    },
+    {
+      "lender": "B006",
+      "borrower": "B027",
+      "amount": 36.587148859802156
+    },
+    {
+      "lender": "B006",
+      "borrower": "B028",
+      "amount": 34.0180654167566
+    },
+    {
+      "lender": "B006",
+      "borrower": "B029",
+      "amount": 27.09500710571298
+    },
+    {
+      "lender": "B006",
+      "borrower": "B037",
+      "amount": 26.70513301129416
+    },
+    {
+      "lender": "B006",
+      "borrower": "B043",
+      "amount": 27.372443097777555
+    },
+    {
+      "lender": "B006",
+      "borrower": "B046",
+      "amount": 29.16734429262346
+    },
+    {
+      "lender": "B006",
+      "borrower": "B048",
+      "amount": 5.576877020865496
+    },
+    {
+      "lender": "B006",
+      "borrower": "B050",
+      "amount": 38.53324027062274
+    },
+    {
+      "lender": "B007",
+      "borrower": "B006",
+      "amount": 25.496131651295293
+    },
+    {
+      "lender": "B007",
+      "borrower": "B009",
+      "amount": 32.35130437908476
+    },
+    {
+      "lender": "B007",
+      "borrower": "B010",
+      "amount": 18.20486436714771
+    },
+    {
+      "lender": "B007",
+      "borrower": "B017",
+      "amount": 5.433902487052858
+    },
+    {
+      "lender": "B007",
+      "borrower": "B042",
+      "amount": 22.84071309567554
+    },
+    {
+      "lender": "B007",
+      "borrower": "B044",
+      "amount": 22.751654176057514
+    },
+    {
+      "lender": "B007",
+      "borrower": "B046",
+      "amount": 20.294625090900812
+    },
+    {
+      "lender": "B007",
+      "borrower": "B048",
+      "amount": 16.890096895672684
+    },
+    {
+      "lender": "B008",
+      "borrower": "B001",
+      "amount": 13.743913073340272
+    },
+    {
+      "lender": "B008",
+      "borrower": "B005",
+      "amount": 23.464070607401396
+    },
+    {
+      "lender": "B008",
+      "borrower": "B006",
+      "amount": 18.134734889272295
+    },
+    {
+      "lender": "B008",
+      "borrower": "B007",
+      "amount": 38.9476159067433
+    },
+    {
+      "lender": "B008",
+      "borrower": "B009",
+      "amount": 11.0524557718426
+    },
+    {
+      "lender": "B008",
+      "borrower": "B010",
+      "amount": 16.188294866948045
+    },
+    {
+      "lender": "B008",
+      "borrower": "B020",
+      "amount": 15.288616482359986
+    },
+    {
+      "lender": "B008",
+      "borrower": "B021",
+      "amount": 24.015821168258494
+    },
+    {
+      "lender": "B008",
+      "borrower": "B022",
+      "amount": 22.474808994095177
+    },
+    {
+      "lender": "B008",
+      "borrower": "B033",
+      "amount": 27.530916289849557
+    },
+    {
+      "lender": "B008",
+      "borrower": "B034",
+      "amount": 38.25006197009728
+    },
+    {
+      "lender": "B008",
+      "borrower": "B047",
+      "amount": 14.982737992285358
+    },
+    {
+      "lender": "B008",
+      "borrower": "B050",
+      "amount": 29.247004923924877
+    },
+    {
+      "lender": "B009",
+      "borrower": "B001",
+      "amount": 5.876407105181427
+    },
+    {
+      "lender": "B009",
+      "borrower": "B003",
+      "amount": 14.183596545676858
+    },
+    {
+      "lender": "B009",
+      "borrower": "B004",
+      "amount": 21.230190479880747
+    },
+    {
+      "lender": "B009",
+      "borrower": "B006",
+      "amount": 6.084817596839706
+    },
+    {
+      "lender": "B009",
+      "borrower": "B007",
+      "amount": 26.618431119377362
+    },
+    {
+      "lender": "B009",
+      "borrower": "B008",
+      "amount": 28.740871294059787
+    },
+    {
+      "lender": "B009",
+      "borrower": "B010",
+      "amount": 31.135610019331633
+    },
+    {
+      "lender": "B009",
+      "borrower": "B013",
+      "amount": 23.08010766950543
+    },
+    {
+      "lender": "B009",
+      "borrower": "B018",
+      "amount": 26.138063274251934
+    },
+    {
+      "lender": "B009",
+      "borrower": "B022",
+      "amount": 18.862283794747054
+    },
+    {
+      "lender": "B009",
+      "borrower": "B024",
+      "amount": 6.443856137729689
+    },
+    {
+      "lender": "B009",
+      "borrower": "B026",
+      "amount": 8.498314952107958
+    },
+    {
+      "lender": "B009",
+      "borrower": "B031",
+      "amount": 27.924857347051244
+    },
+    {
+      "lender": "B009",
+      "borrower": "B032",
+      "amount": 39.84443548550217
+    },
+    {
+      "lender": "B009",
+      "borrower": "B033",
+      "amount": 5.553113370715367
+    },
+    {
+      "lender": "B009",
+      "borrower": "B038",
+      "amount": 24.515422388923398
+    },
+    {
+      "lender": "B009",
+      "borrower": "B044",
+      "amount": 31.285306350889524
+    },
+    {
+      "lender": "B009",
+      "borrower": "B046",
+      "amount": 33.93711898048575
+    },
+    {
+      "lender": "B010",
+      "borrower": "B001",
+      "amount": 24.082171542792402
+    },
+    {
+      "lender": "B010",
+      "borrower": "B003",
+      "amount": 26.697059306443677
+    },
+    {
+      "lender": "B010",
+      "borrower": "B004",
+      "amount": 29.38537308460937
+    },
+    {
+      "lender": "B010",
+      "borrower": "B007",
+      "amount": 35.063818739270076
+    },
+    {
+      "lender": "B010",
+      "borrower": "B008",
+      "amount": 9.280133802098653
+    },
+    {
+      "lender": "B010",
+      "borrower": "B009",
+      "amount": 37.41637686962022
+    },
+    {
+      "lender": "B010",
+      "borrower": "B011",
+      "amount": 5.91060912430495
+    },
+    {
+      "lender": "B010",
+      "borrower": "B014",
+      "amount": 34.26699128352213
+    },
+    {
+      "lender": "B010",
+      "borrower": "B015",
+      "amount": 7.685914929589404
+    },
+    {
+      "lender": "B010",
+      "borrower": "B022",
+      "amount": 11.81198740617228
+    },
+    {
+      "lender": "B010",
+      "borrower": "B029",
+      "amount": 5.136295123339641
+    },
+    {
+      "lender": "B010",
+      "borrower": "B033",
+      "amount": 20.583984693761423
+    },
+    {
+      "lender": "B010",
+      "borrower": "B034",
+      "amount": 16.70257293510873
+    },
+    {
+      "lender": "B010",
+      "borrower": "B045",
+      "amount": 10.809751902045956
+    },
+    {
+      "lender": "B011",
+      "borrower": "B030",
+      "amount": 20.78815562813672
+    },
+    {
+      "lender": "B011",
+      "borrower": "B046",
+      "amount": 19.082980911026432
+    },
+    {
+      "lender": "B012",
+      "borrower": "B006",
+      "amount": 31.868136144455953
+    },
+    {
+      "lender": "B012",
+      "borrower": "B009",
+      "amount": 36.25956071245113
+    },
+    {
+      "lender": "B013",
+      "borrower": "B002",
+      "amount": 27.839853811847863
+    },
+    {
+      "lender": "B013",
+      "borrower": "B007",
+      "amount": 9.354363605428336
+    },
+    {
+      "lender": "B014",
+      "borrower": "B006",
+      "amount": 15.338677814844772
+    },
+    {
+      "lender": "B014",
+      "borrower": "B010",
+      "amount": 36.96614038912979
+    },
+    {
+      "lender": "B016",
+      "borrower": "B006",
+      "amount": 8.105707255276121
+    },
+    {
+      "lender": "B016",
+      "borrower": "B007",
+      "amount": 19.239954378678927
+    },
+    {
+      "lender": "B016",
+      "borrower": "B009",
+      "amount": 37.98766167317184
+    },
+    {
+      "lender": "B016",
+      "borrower": "B032",
+      "amount": 38.273269451432
+    },
+    {
+      "lender": "B016",
+      "borrower": "B041",
+      "amount": 19.392111196711234
+    },
+    {
+      "lender": "B017",
+      "borrower": "B010",
+      "amount": 28.35889108345791
+    },
+    {
+      "lender": "B017",
+      "borrower": "B028",
+      "amount": 20.986095942389966
+    },
+    {
+      "lender": "B018",
+      "borrower": "B008",
+      "amount": 31.37111888027196
+    },
+    {
+      "lender": "B019",
+      "borrower": "B006",
+      "amount": 6.105346574254948
+    },
+    {
+      "lender": "B019",
+      "borrower": "B007",
+      "amount": 10.045500212247546
+    },
+    {
+      "lender": "B020",
+      "borrower": "B007",
+      "amount": 26.496958124025973
+    },
+    {
+      "lender": "B020",
+      "borrower": "B009",
+      "amount": 13.139329185507226
+    },
+    {
+      "lender": "B021",
+      "borrower": "B005",
+      "amount": 28.311830474420198
+    },
+    {
+      "lender": "B021",
+      "borrower": "B008",
+      "amount": 17.292802461145442
+    },
+    {
+      "lender": "B021",
+      "borrower": "B018",
+      "amount": 36.032594534473745
+    },
+    {
+      "lender": "B023",
+      "borrower": "B024",
+      "amount": 33.67407849459953
+    },
+    {
+      "lender": "B024",
+      "borrower": "B006",
+      "amount": 22.249323002407376
+    },
+    {
+      "lender": "B024",
+      "borrower": "B032",
+      "amount": 32.05132804832002
+    },
+    {
+      "lender": "B025",
+      "borrower": "B006",
+      "amount": 14.489826018228163
+    },
+    {
+      "lender": "B025",
+      "borrower": "B007",
+      "amount": 22.29909218841519
+    },
+    {
+      "lender": "B025",
+      "borrower": "B008",
+      "amount": 11.911871815214734
+    },
+    {
+      "lender": "B025",
+      "borrower": "B009",
+      "amount": 35.131015898234786
+    },
+    {
+      "lender": "B025",
+      "borrower": "B046",
+      "amount": 33.80736657989452
+    },
+    {
+      "lender": "B026",
+      "borrower": "B005",
+      "amount": 36.57523839431504
+    },
+    {
+      "lender": "B027",
+      "borrower": "B001",
+      "amount": 35.71169434284908
+    },
+    {
+      "lender": "B027",
+      "borrower": "B004",
+      "amount": 38.58586917208232
+    },
+    {
+      "lender": "B027",
+      "borrower": "B041",
+      "amount": 12.991768107117409
+    },
+    {
+      "lender": "B027",
+      "borrower": "B050",
+      "amount": 37.61385017783604
+    },
+    {
+      "lender": "B028",
+      "borrower": "B007",
+      "amount": 24.992461697319918
+    },
+    {
+      "lender": "B029",
+      "borrower": "B004",
+      "amount": 19.787327937135323
+    },
+    {
+      "lender": "B029",
+      "borrower": "B010",
+      "amount": 24.613086358875556
+    },
+    {
+      "lender": "B030",
+      "borrower": "B006",
+      "amount": 16.991082482759722
+    },
+    {
+      "lender": "B030",
+      "borrower": "B007",
+      "amount": 15.099355243633322
+    },
+    {
+      "lender": "B031",
+      "borrower": "B003",
+      "amount": 13.446001829213508
+    },
+    {
+      "lender": "B032",
+      "borrower": "B007",
+      "amount": 7.884979630999439
+    },
+    {
+      "lender": "B032",
+      "borrower": "B010",
+      "amount": 22.37977140015156
+    },
+    {
+      "lender": "B033",
+      "borrower": "B007",
+      "amount": 36.07165864998606
+    },
+    {
+      "lender": "B033",
+      "borrower": "B050",
+      "amount": 27.055318924603462
+    },
+    {
+      "lender": "B034",
+      "borrower": "B003",
+      "amount": 23.234147146452074
+    },
+    {
+      "lender": "B034",
+      "borrower": "B007",
+      "amount": 20.000752138782076
+    },
+    {
+      "lender": "B035",
+      "borrower": "B003",
+      "amount": 21.254056921101718
+    },
+    {
+      "lender": "B035",
+      "borrower": "B008",
+      "amount": 12.324707165018282
+    },
+    {
+      "lender": "B036",
+      "borrower": "B006",
+      "amount": 33.8027557017584
+    },
+    {
+      "lender": "B037",
+      "borrower": "B001",
+      "amount": 11.943403714853481
+    },
+    {
+      "lender": "B037",
+      "borrower": "B002",
+      "amount": 30.081796485455957
+    },
+    {
+      "lender": "B037",
+      "borrower": "B004",
+      "amount": 31.599475402365343
+    },
+    {
+      "lender": "B037",
+      "borrower": "B005",
+      "amount": 25.1204164709707
+    },
+    {
+      "lender": "B038",
+      "borrower": "B024",
+      "amount": 35.202423123418995
+    },
+    {
+      "lender": "B039",
+      "borrower": "B050",
+      "amount": 15.186762335772752
+    },
+    {
+      "lender": "B040",
+      "borrower": "B001",
+      "amount": 35.85660274350022
+    },
+    {
+      "lender": "B040",
+      "borrower": "B004",
+      "amount": 30.529366085975646
+    },
+    {
+      "lender": "B040",
+      "borrower": "B042",
+      "amount": 32.95624397166162
+    },
+    {
+      "lender": "B041",
+      "borrower": "B004",
+      "amount": 28.260289833455996
+    },
+    {
+      "lender": "B041",
+      "borrower": "B006",
+      "amount": 34.622005594648925
+    },
+    {
+      "lender": "B042",
+      "borrower": "B002",
+      "amount": 39.75846019511726
+    },
+    {
+      "lender": "B042",
+      "borrower": "B004",
+      "amount": 19.70569990836235
+    },
+    {
+      "lender": "B042",
+      "borrower": "B009",
+      "amount": 33.48704892983496
+    },
+    {
+      "lender": "B042",
+      "borrower": "B014",
+      "amount": 31.060291583131175
+    },
+    {
+      "lender": "B043",
+      "borrower": "B001",
+      "amount": 20.85045579992063
+    },
+    {
+      "lender": "B043",
+      "borrower": "B002",
+      "amount": 37.44321499063792
+    },
+    {
+      "lender": "B043",
+      "borrower": "B006",
+      "amount": 18.804907535040815
+    },
+    {
+      "lender": "B044",
+      "borrower": "B003",
+      "amount": 24.791307069668314
+    },
+    {
+      "lender": "B044",
+      "borrower": "B006",
+      "amount": 8.707982494683655
+    },
+    {
+      "lender": "B044",
+      "borrower": "B008",
+      "amount": 12.902131792319318
+    },
+    {
+      "lender": "B045",
+      "borrower": "B001",
+      "amount": 34.42436596868163
+    },
+    {
+      "lender": "B045",
+      "borrower": "B004",
+      "amount": 18.879345299009657
+    },
+    {
+      "lender": "B046",
+      "borrower": "B004",
+      "amount": 18.792943129534038
+    },
+    {
+      "lender": "B046",
+      "borrower": "B005",
+      "amount": 13.609335636671709
+    },
+    {
+      "lender": "B047",
+      "borrower": "B005",
+      "amount": 22.206361700410902
+    },
+    {
+      "lender": "B047",
+      "borrower": "B010",
+      "amount": 33.20359364727179
+    },
+    {
+      "lender": "B047",
+      "borrower": "B045",
+      "amount": 36.33074412208089
+    },
+    {
+      "lender": "B048",
+      "borrower": "B009",
+      "amount": 7.454005121546436
+    },
+    {
+      "lender": "B049",
+      "borrower": "B008",
+      "amount": 25.11872559340404
+    },
+    {
+      "lender": "B049",
+      "borrower": "B010",
+      "amount": 21.35456787623171
+    },
+    {
+      "lender": "B049",
+      "borrower": "B032",
+      "amount": 26.499864766505244
+    },
+    {
+      "lender": "B049",
+      "borrower": "B042",
+      "amount": 20.65464904178942
+    }
+  ]
+}

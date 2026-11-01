@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@playwright/mcp": "0.0.84",
+    "@playwright/test": "1.64.1",
+    "playwright": "1.64.1"
+  },
+  "name": "atlas-browser-qa",
+  "private": true,
+  "scripts": {
+    "qa": "node qa.mjs",
+    "smoke": "node mcp-smoke.mjs",
+    "inspect": "node inspect.mjs"
+  }
+}

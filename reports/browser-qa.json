@@ -1,0 +1,40 @@
+{
+  "browser": "Chromium",
+  "results": [
+    {
+      "name": "Jupyter authenticated notebook loads",
+      "status": "PASS",
+      "detail": "Authenticated notebook and rendered ATLAS content visible"
+    },
+    {
+      "name": "Jupyter Run All interaction",
+      "status": "PASS",
+      "detail": "Run All triggered the final summary export; kernel returned Idle, no rendered traceback"
+    },
+    {
+      "name": "Jupyter browser JavaScript errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "Swagger documentation and live health execution",
+      "status": "PASS",
+      "detail": "Health endpoint executed through Swagger UI and returned ok"
+    },
+    {
+      "name": "Presentation desktop",
+      "status": "PASS",
+      "detail": "Heading and 3 figures load; no page-level horizontal overflow"
+    },
+    {
+      "name": "Presentation mobile",
+      "status": "PASS",
+      "detail": "Heading and 3 figures load; no page-level horizontal overflow"
+    },
+    {
+      "name": "Presentation offline with equations and figures",
+      "status": "PASS",
+      "detail": "All three images embedded; equations visible without JavaScript or network"
+    }
+  ]
+}

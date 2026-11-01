@@ -1,0 +1,19 @@
+{
+  "series": "SP500",
+  "downloaded": "2026-10-30",
+  "source": "S&P Dow Jones Indices LLC via FRED",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2020-02-01&coed=2020-04-30",
+  "sha256": "92ff16beefb4f87dddf221faac16812121a5420f8671542fc164f90df55af6e5",
+  "calibration": {
+    "series": "SP500",
+    "source": "https://fred.stlouisfed.org/series/SP500",
+    "window_start": "2020-02-03",
+    "window_end": "2020-04-30",
+    "peak_date": "2020-02-19",
+    "trough_date": "2020-03-23",
+    "drawdown_magnitude": 0.3392495902426059,
+    "multiplier": 0.3,
+    "external_impairment": 0.10177487707278178,
+    "mapping": "min(1, selected-window maximum drawdown magnitude * multiplier)"
+  }
+}

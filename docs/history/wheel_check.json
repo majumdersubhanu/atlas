@@ -1,0 +1,7 @@
+{
+  "imported_from": "dist/atlas_risk-0.4.0-py3-none-any.whl/atlas",
+  "observations": 62,
+  "network_banks": 50,
+  "covid_synthetic_defaults": 45,
+  "dataset_sha256": "c6948be98fa2a18832d103bc4efca83d2c7f33a7ff2842b6a7cc98b26df623fb"
+}

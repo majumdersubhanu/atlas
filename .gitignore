@@ -1,0 +1,45 @@
+# Python environments, caches, builds
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Machine-local tools, runtime URLs/tokens, and assistant scratch files
+.tools/
+.runtime/
+.agents/
+.aws/
+.codex/
+.codex-finalizer/
+.chart-data-*/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Historical release copies and newly generated experiment runs
+releases/
+experiments/*.json
+!experiments/demo_*.json
+experiments/quick_demo/
+experiments/reproduced/
+experiments/local/
+
+# Optional JavaScript tooling and generated previews
+node_modules/
+browser-tests/test-results/
+browser-tests/.playwright-mcp/
+presentation/.build/
+
+# Browser screenshots may show local authenticated URLs
+reports/jupyter*.png
+reports/swagger-health.png
+data-refresh/

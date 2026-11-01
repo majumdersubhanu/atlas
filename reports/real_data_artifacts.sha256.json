@@ -1,0 +1,11 @@
+{
+  "src/atlas/observed.py": "f413efe4117cea57a30325f5ab4e1060bcfdf3be8f098cf690627cf661dc6877",
+  "notebooks/03_real_data_defense.ipynb": "4c9fc42af786eb45387c633f478b50b7a601ce6f10bc5bddf851e58b4c3e9f84",
+  "reports/03_real_data_defense.html": "d3d0b9c81ff89f9574abdf8dddb35fef9d726264617744f667c0334568943f02",
+  "reports/real_data_summary.json": "dbb84d15e940b418c7a640d10ea0bb5bfd67c7de3c2bc7aa784525f0576ea662",
+  "data/manifest.json": "06fc30a940d5c03a76a33ad8f0bb5b5328fc7e9bb40cd8a4b473d8d49cb774f5",
+  "data/processed/bank_cohort.csv": "a26b06cfb0caab2c87b98c0f8667588020fabd1aa0f1c46f840eb6684ddfc188",
+  "data/processed/stress_sensitivity.csv": "11d4bb2093937ede1c0c6cbe730d2d0e1ff39cb4c832039790036a5eb3b9445c",
+  "data/processed/scenario_results.csv": "3b6a762be57cd1257921d312ef9491934ca7dfe52edb4785f2aff4c115385d04",
+  "data/processed/market_mapping_scenarios.csv": "4d72d3078dbc0ba0d5873207eae32d27fb5f0dc91a7a2cf6b83f143ef3e9f039"
+}

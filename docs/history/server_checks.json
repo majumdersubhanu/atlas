@@ -1,0 +1,12 @@
+{
+  "api": {
+    "status": 200,
+    "body": "{\"status\":\"ok\",\"synthetic_network_only\":true}",
+    "page_status": 200
+  },
+  "streamlit": {
+    "status": 200,
+    "body": "ok",
+    "page_status": 200
+  }
+}

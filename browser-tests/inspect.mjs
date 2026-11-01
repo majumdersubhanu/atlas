@@ -1,0 +1,14 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+const browser=await chromium.launch({headless:true,executablePath:chromium.executablePath()});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+page.on('pageerror',e=>console.log('PAGEERROR',e.message));
+await page.goto(fs.readFileSync('../.runtime/jupyter_url.txt','utf8'),{waitUntil:'domcontentloaded'});
+await page.getByRole('menuitem',{name:'Run',exact:true}).waitFor({timeout:60000});
+await page.locator('.jp-Notebook').waitFor({timeout:60000});
+await page.getByRole('heading',{name:'ATLAS',exact:true}).waitFor({timeout:60000});
+await page.screenshot({path:'../reports/jupyter-desktop.png'});
+console.log((await page.locator('body').innerText()).slice(-6500));
+await page.getByRole('menuitem',{name:'Run',exact:true}).click();
+console.log('MENU',await page.getByRole('menu').last().ariaSnapshot());
+await browser.close();

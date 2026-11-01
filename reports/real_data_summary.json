@@ -1,0 +1,13 @@
+{
+  "cohort_size": 30,
+  "baseline": "2019-12-31",
+  "followup": "2020-06-30",
+  "observed_drawdown": 0.3392495902426059,
+  "assumed_multiplier": 0.3,
+  "assumed_impairment": 0.10177487707278178,
+  "capital_exhausted": 8,
+  "shortfall_usd_million": 26607.031624462914,
+  "chain_loss": 108.0,
+  "python": "3.12.16",
+  "inputs_verified": true
+}

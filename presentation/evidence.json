@@ -1,0 +1,428 @@
+{
+  "market": [
+    {
+      "date": "03 Feb",
+      "close": 3248.92,
+      "drawdown": 0.0
+    },
+    {
+      "date": "04 Feb",
+      "close": 3297.59,
+      "drawdown": 0.0
+    },
+    {
+      "date": "05 Feb",
+      "close": 3334.69,
+      "drawdown": 0.0
+    },
+    {
+      "date": "06 Feb",
+      "close": 3345.78,
+      "drawdown": 0.0
+    },
+    {
+      "date": "07 Feb",
+      "close": 3327.71,
+      "drawdown": -0.005400833288500828
+    },
+    {
+      "date": "10 Feb",
+      "close": 3352.09,
+      "drawdown": 0.0
+    },
+    {
+      "date": "11 Feb",
+      "close": 3357.75,
+      "drawdown": 0.0
+    },
+    {
+      "date": "12 Feb",
+      "close": 3379.45,
+      "drawdown": 0.0
+    },
+    {
+      "date": "13 Feb",
+      "close": 3373.94,
+      "drawdown": -0.0016304428235363044
+    },
+    {
+      "date": "14 Feb",
+      "close": 3380.16,
+      "drawdown": 0.0
+    },
+    {
+      "date": "18 Feb",
+      "close": 3370.29,
+      "drawdown": -0.0029199801192842934
+    },
+    {
+      "date": "19 Feb",
+      "close": 3386.15,
+      "drawdown": 0.0
+    },
+    {
+      "date": "20 Feb",
+      "close": 3373.23,
+      "drawdown": -0.0038155427255142094
+    },
+    {
+      "date": "21 Feb",
+      "close": 3337.75,
+      "drawdown": -0.014293519188458892
+    },
+    {
+      "date": "24 Feb",
+      "close": 3225.89,
+      "drawdown": -0.047328086469884734
+    },
+    {
+      "date": "25 Feb",
+      "close": 3128.21,
+      "drawdown": -0.07617500701386537
+    },
+    {
+      "date": "26 Feb",
+      "close": 3116.39,
+      "drawdown": -0.07966569703055093
+    },
+    {
+      "date": "27 Feb",
+      "close": 2978.76,
+      "drawdown": -0.12031067731789791
+    },
+    {
+      "date": "28 Feb",
+      "close": 2954.22,
+      "drawdown": -0.12755784593121988
+    },
+    {
+      "date": "02 Mar",
+      "close": 3090.23,
+      "drawdown": -0.08739128508778404
+    },
+    {
+      "date": "03 Mar",
+      "close": 3003.37,
+      "drawdown": -0.11304283625946876
+    },
+    {
+      "date": "04 Mar",
+      "close": 3130.12,
+      "drawdown": -0.07561094458308115
+    },
+    {
+      "date": "05 Mar",
+      "close": 3023.94,
+      "drawdown": -0.10696809060437373
+    },
+    {
+      "date": "06 Mar",
+      "close": 2972.37,
+      "drawdown": -0.12219777623554784
+    },
+    {
+      "date": "09 Mar",
+      "close": 2746.56,
+      "drawdown": -0.18888413094517376
+    },
+    {
+      "date": "10 Mar",
+      "close": 2882.23,
+      "drawdown": -0.1488179791208305
+    },
+    {
+      "date": "11 Mar",
+      "close": 2741.38,
+      "drawdown": -0.19041389188311209
+    },
+    {
+      "date": "12 Mar",
+      "close": 2480.64,
+      "drawdown": -0.26741579670126847
+    },
+    {
+      "date": "13 Mar",
+      "close": 2711.02,
+      "drawdown": -0.19937982664678178
+    },
+    {
+      "date": "16 Mar",
+      "close": 2386.13,
+      "drawdown": -0.2953265508025338
+    },
+    {
+      "date": "17 Mar",
+      "close": 2529.19,
+      "drawdown": -0.25307797941615107
+    },
+    {
+      "date": "18 Mar",
+      "close": 2398.1,
+      "drawdown": -0.2917915626891898
+    },
+    {
+      "date": "19 Mar",
+      "close": 2409.39,
+      "drawdown": -0.2884573926140307
+    },
+    {
+      "date": "20 Mar",
+      "close": 2304.92,
+      "drawdown": -0.31930954033341696
+    },
+    {
+      "date": "23 Mar",
+      "close": 2237.4,
+      "drawdown": -0.3392495902426059
+    },
+    {
+      "date": "24 Mar",
+      "close": 2447.33,
+      "drawdown": -0.2772529273658876
+    },
+    {
+      "date": "25 Mar",
+      "close": 2475.56,
+      "drawdown": -0.2689160255747678
+    },
+    {
+      "date": "26 Mar",
+      "close": 2630.07,
+      "drawdown": -0.2232860328101236
+    },
+    {
+      "date": "27 Mar",
+      "close": 2541.47,
+      "drawdown": -0.24945144190304636
+    },
+    {
+      "date": "30 Mar",
+      "close": 2626.65,
+      "drawdown": -0.22429602941393623
+    },
+    {
+      "date": "31 Mar",
+      "close": 2584.59,
+      "drawdown": -0.2367172157169647
+    },
+    {
+      "date": "01 Apr",
+      "close": 2470.5,
+      "drawdown": -0.27041034803537944
+    },
+    {
+      "date": "02 Apr",
+      "close": 2526.9,
+      "drawdown": -0.2537542636918033
+    },
+    {
+      "date": "03 Apr",
+      "close": 2488.65,
+      "drawdown": -0.2650502783397073
+    },
+    {
+      "date": "06 Apr",
+      "close": 2663.68,
+      "drawdown": -0.2133603059521877
+    },
+    {
+      "date": "07 Apr",
+      "close": 2659.41,
+      "drawdown": -0.21462132510373144
+    },
+    {
+      "date": "08 Apr",
+      "close": 2749.98,
+      "drawdown": -0.18787413434136113
+    },
+    {
+      "date": "09 Apr",
+      "close": 2789.82,
+      "drawdown": -0.17610855986887763
+    },
+    {
+      "date": "13 Apr",
+      "close": 2761.63,
+      "drawdown": -0.18443364883422175
+    },
+    {
+      "date": "14 Apr",
+      "close": 2846.06,
+      "drawdown": -0.15949972682840396
+    },
+    {
+      "date": "15 Apr",
+      "close": 2783.36,
+      "drawdown": -0.17801633123163474
+    },
+    {
+      "date": "16 Apr",
+      "close": 2799.55,
+      "drawdown": -0.1732350899989663
+    },
+    {
+      "date": "17 Apr",
+      "close": 2874.56,
+      "drawdown": -0.1510830884632991
+    },
+    {
+      "date": "20 Apr",
+      "close": 2823.16,
+      "drawdown": -0.1662625695849269
+    },
+    {
+      "date": "21 Apr",
+      "close": 2736.56,
+      "drawdown": -0.19183733738907027
+    },
+    {
+      "date": "22 Apr",
+      "close": 2799.31,
+      "drawdown": -0.17330596695361988
+    },
+    {
+      "date": "23 Apr",
+      "close": 2797.8,
+      "drawdown": -0.17375190112664818
+    },
+    {
+      "date": "24 Apr",
+      "close": 2836.74,
+      "drawdown": -0.16225211523411553
+    },
+    {
+      "date": "27 Apr",
+      "close": 2878.48,
+      "drawdown": -0.14992543153729165
+    },
+    {
+      "date": "28 Apr",
+      "close": 2863.39,
+      "drawdown": -0.15438182006113144
+    },
+    {
+      "date": "29 Apr",
+      "close": 2939.51,
+      "drawdown": -0.13190201261019152
+    },
+    {
+      "date": "30 Apr",
+      "close": 2912.43,
+      "drawdown": -0.13989929566026316
+    }
+  ],
+  "calibration": {
+    "series": "SP500",
+    "source": "https://fred.stlouisfed.org/series/SP500",
+    "window_start": "2020-02-03",
+    "window_end": "2020-04-30",
+    "peak_date": "2020-02-19",
+    "trough_date": "2020-03-23",
+    "drawdown_magnitude": 0.3392495902426059,
+    "multiplier": 0.3,
+    "external_impairment": 0.10177487707278178,
+    "mapping": "min(1, selected-window maximum drawdown magnitude * multiplier)"
+  },
+  "scenarios": [
+    {
+      "multiplier": 0,
+      "impairment": 0.0,
+      "initial": 0,
+      "secondary": 0,
+      "total": 0,
+      "baseline": 0
+    },
+    {
+      "multiplier": 0.1,
+      "impairment": 0.03392495902426059,
+      "initial": 0,
+      "secondary": 0,
+      "total": 0,
+      "baseline": 0
+    },
+    {
+      "multiplier": 0.2,
+      "impairment": 0.06784991804852118,
+      "initial": 2,
+      "secondary": 0,
+      "total": 2,
+      "baseline": 2
+    },
+    {
+      "multiplier": 0.3,
+      "impairment": 0.10177487707278178,
+      "initial": 14,
+      "secondary": 31,
+      "total": 45,
+      "baseline": 21
+    },
+    {
+      "multiplier": 0.4,
+      "impairment": 0.13569983609704236,
+      "initial": 29,
+      "secondary": 21,
+      "total": 50,
+      "baseline": 49
+    }
+  ],
+  "ranking": [
+    {
+      "bank_id": "B010",
+      "secondary_defaults": 0,
+      "total_defaults": 1,
+      "posted_interbank_loss": 218.84140161157617
+    },
+    {
+      "bank_id": "B009",
+      "secondary_defaults": 0,
+      "total_defaults": 1,
+      "posted_interbank_loss": 214.40293480944044
+    },
+    {
+      "bank_id": "B007",
+      "secondary_defaults": 0,
+      "total_defaults": 1,
+      "posted_interbank_loss": 195.12576947960898
+    },
+    {
+      "bank_id": "B004",
+      "secondary_defaults": 0,
+      "total_defaults": 1,
+      "posted_interbank_loss": 192.40981296579835
+    },
+    {
+      "bank_id": "B006",
+      "secondary_defaults": 0,
+      "total_defaults": 1,
+      "posted_interbank_loss": 188.52022431612832
+    }
+  ],
+  "ecl": 61.80584901152538,
+  "loans": 222,
+  "mc": {
+    "trials": 200,
+    "conditional_summary": {
+      "defaults": {
+        "mean": 0.935,
+        "mcse_mean": 0.06652822728079885,
+        "empirical_q05": 0.0,
+        "empirical_median": 1.0,
+        "empirical_q95": 3.0
+      },
+      "secondary_defaults": {
+        "mean": 0.0,
+        "mcse_mean": 0.0,
+        "empirical_q05": 0.0,
+        "empirical_median": 0.0,
+        "empirical_q95": 0.0
+      },
+      "interbank_loss": {
+        "mean": 52.247631431236705,
+        "mcse_mean": 5.117220638360753,
+        "empirical_q05": 0.0,
+        "empirical_median": 22.67831722247373,
+        "empirical_q95": 214.40293480944044
+      }
+    }
+  }
+}

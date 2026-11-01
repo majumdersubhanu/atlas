@@ -1,0 +1,30 @@
+[
+  {
+    "file": "data/raw/fdic_20191231.json",
+    "sha256": "9954780113677c6a6b68dc5ff29a812e748e9a7fa8eb2280383cd1016722edbf",
+    "source": "https://api.fdic.gov/banks/financials?filters=REPDTE%3A20191231&fields=CERT%2CCERTCONS%2CBKCLASS%2CNAME%2CREPDTE%2CASSET%2CEQ%2CEQTOT%2CDEP%2CLIAB&sort_by=ASSET&sort_order=DESC&limit=100&format=json",
+    "reference_date": "20191231",
+    "retrieved": "2026-11-01",
+    "units": "USD thousands",
+    "vintage": "Latest revised historical observations downloaded on retrieval date; not a real-time vintage"
+  },
+  {
+    "file": "data/raw/fdic_20200630.json",
+    "sha256": "ba7d468301a9e8cbc072da9a2b9d37b9492d9a76f8e311359d5f6418502b141b",
+    "source": "https://api.fdic.gov/banks/financials?filters=REPDTE%3A20200630&fields=CERT%2CCERTCONS%2CBKCLASS%2CNAME%2CREPDTE%2CASSET%2CEQ%2CEQTOT%2CDEP%2CLIAB&sort_by=ASSET&sort_order=DESC&limit=100&format=json",
+    "reference_date": "20200630",
+    "retrieved": "2026-11-01",
+    "units": "USD thousands",
+    "vintage": "Latest revised historical observations downloaded on retrieval date; not a real-time vintage"
+  },
+  {
+    "file": "data/raw/fdic_field_definitions.yaml",
+    "sha256": "b257457e4e821d6a0d9f88ffc4e6e0da80e4ccf67fa394cadb21587b50b23d59",
+    "source": "https://api.fdic.gov/banks/docs/risview_properties.yaml"
+  },
+  {
+    "file": "src/atlas/data/sp500_2020.csv",
+    "sha256": "92ff16beefb4f87dddf221faac16812121a5420f8671542fc164f90df55af6e5",
+    "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2020-02-01&coed=2020-04-30"
+  }
+]

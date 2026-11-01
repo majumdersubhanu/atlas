@@ -1,0 +1,3088 @@
+{
+  "atlas_version": "0.5.0",
+  "runtime": {
+    "python": "3.12.16",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "networkx": "3.7",
+      "pydantic": "2.14.2"
+    }
+  },
+  "source_sha256": {
+    "__init__.py": "37af9f211c2a572d84bf9c5f8640834f60d2874ddedb686161f8acfc88926300",
+    "analysis.py": "bfc92c795ab99488f464185d13622998b610d63cc8f47c612476cf4f5180b51c",
+    "api.py": "c9a92ad6638296f09ccd7409c2a5853f6967fd02d0a5e73f7bbc117997669285",
+    "baseline.py": "abb6dd0a2ccbdcf11862b4bac621d723f7d88ce7806577dd822bb55e70924282",
+    "cli.py": "2412c5c7f3df6fcafc78a2f93d73c879d74083f7008e3c84ca020783f5e30c43",
+    "engine.py": "7387e867691f91c267e16d6d86f065a4ac447c49a29f8aea2c468073de8485f1",
+    "generate.py": "1ff8e15dae9615858ff7b69e57f1c79f41efd5e71cfa05d19c4ca8c3a2bd4c55",
+    "market.py": "f781fa3eeb7bf4d1b4cf527d72b5a900bf0a6961c2851570e25e329444ac5cdf",
+    "models.py": "9bb982610c50b2f3e63022ca4dc41f55151f5810b3ca715e6d8efb5f13c7fe43",
+    "research.py": "1742aa69ca327fd35a50345af3347e2c7a75962929107dce2ce71097486358b5",
+    "storage.py": "0894f4cb8e2425dbef936262f10642921167f419f8883ced6e80662cd0c470bd"
+  },
+  "created_utc": "2026-10-30T04:13:41.519502+00:00",
+  "dataset_sha256": "c6948be98fa2a18832d103bc4efca83d2c7f33a7ff2842b6a7cc98b26df623fb",
+  "dataset": {
+    "schema_version": "1.0",
+    "synthetic": true,
+    "units": "INR crore (synthetic nominal amounts)",
+    "seed": 42,
+    "topology": "core_periphery",
+    "banks": [
+      {
+        "id": "B001",
+        "name": "Atlas Synthetic Bank 01",
+        "tier": "core",
+        "external_assets": 657.8329938690639,
+        "interbank_assets": 195.22317764638274,
+        "deposits": 481.0911985082678,
+        "interbank_liabilities": 288.57834239968554,
+        "equity": 83.38663060749334,
+        "pd": 0.02
+      },
+      {
+        "id": "B002",
+        "name": "Atlas Synthetic Bank 02",
+        "tier": "core",
+        "external_assets": 632.026195511093,
+        "interbank_assets": 346.37024562223473,
+        "deposits": 718.5531647109799,
+        "interbank_liabilities": 161.92667469506515,
+        "equity": 97.91660172728264,
+        "pd": 0.02
+      },
+      {
+        "id": "B003",
+        "name": "Atlas Synthetic Bank 03",
+        "tier": "core",
+        "external_assets": 643.4871141553733,
+        "interbank_assets": 217.47532908040805,
+        "deposits": 519.1669916175365,
+        "interbank_liabilities": 233.8076660940179,
+        "equity": 107.98778552422704,
+        "pd": 0.02
+      },
+      {
+        "id": "B004",
+        "name": "Atlas Synthetic Bank 04",
+        "tier": "core",
+        "external_assets": 880.7894167904857,
+        "interbank_assets": 349.96666610057355,
+        "deposits": 802.6154036453962,
+        "interbank_liabilities": 320.6830216096639,
+        "equity": 107.457657635999,
+        "pd": 0.02
+      },
+      {
+        "id": "B005",
+        "name": "Atlas Synthetic Bank 05",
+        "tier": "core",
+        "external_assets": 749.708798443365,
+        "interbank_assets": 361.9675992176424,
+        "deposits": 809.6657659450216,
+        "interbank_liabilities": 159.39138380993873,
+        "equity": 142.61924790604698,
+        "pd": 0.02
+      },
+      {
+        "id": "B006",
+        "name": "Atlas Synthetic Bank 06",
+        "tier": "core",
+        "external_assets": 548.6210868160188,
+        "interbank_assets": 505.04859634960707,
+        "deposits": 627.1327407284332,
+        "interbank_liabilities": 314.2003738602139,
+        "equity": 112.33656857697879,
+        "pd": 0.02
+      },
+      {
+        "id": "B007",
+        "name": "Atlas Synthetic Bank 07",
+        "tier": "core",
+        "external_assets": 632.131212278916,
+        "interbank_assets": 164.26329214288717,
+        "deposits": 376.3073963568949,
+        "interbank_liabilities": 325.2096157993484,
+        "equity": 94.87749226555985,
+        "pd": 0.02
+      },
+      {
+        "id": "B008",
+        "name": "Atlas Synthetic Bank 08",
+        "tier": "core",
+        "external_assets": 468.0585443659776,
+        "interbank_assets": 293.32105293641865,
+        "deposits": 488.0747726565688,
+        "interbank_liabilities": 186.72661321870177,
+        "equity": 86.57821142712558,
+        "pd": 0.02
+      },
+      {
+        "id": "B009",
+        "name": "Atlas Synthetic Bank 09",
+        "tier": "core",
+        "external_assets": 647.6567855140994,
+        "interbank_assets": 379.952803912257,
+        "deposits": 566.5942907482873,
+        "interbank_liabilities": 357.3382246824008,
+        "equity": 103.67707399566832,
+        "pd": 0.02
+      },
+      {
+        "id": "B010",
+        "name": "Atlas Synthetic Bank 10",
+        "tier": "core",
+        "external_assets": 1036.4912267065326,
+        "interbank_assets": 274.8330407426789,
+        "deposits": 827.9077157664924,
+        "interbank_liabilities": 364.7356693526269,
+        "equity": 118.68088233009239,
+        "pd": 0.02
+      },
+      {
+        "id": "B011",
+        "name": "Atlas Synthetic Bank 11",
+        "tier": "periphery",
+        "external_assets": 645.7310591505857,
+        "interbank_assets": 39.87113653916315,
+        "deposits": 576.2590623257433,
+        "interbank_liabilities": 14.074891870821364,
+        "equity": 95.2682414931841,
+        "pd": 0.02
+      },
+      {
+        "id": "B012",
+        "name": "Atlas Synthetic Bank 12",
+        "tier": "periphery",
+        "external_assets": 678.3628158558623,
+        "interbank_assets": 68.12769685690708,
+        "deposits": 644.600839531396,
+        "interbank_liabilities": 47.19484901302245,
+        "equity": 54.694824168350934,
+        "pd": 0.02
+      },
+      {
+        "id": "B013",
+        "name": "Atlas Synthetic Bank 13",
+        "tier": "periphery",
+        "external_assets": 623.8921284138451,
+        "interbank_assets": 37.1942174172762,
+        "deposits": 596.6407753215317,
+        "interbank_liabilities": 23.08010766950543,
+        "equity": 41.36546284008415,
+        "pd": 0.02
+      },
+      {
+        "id": "B014",
+        "name": "Atlas Synthetic Bank 14",
+        "tier": "periphery",
+        "external_assets": 451.0392895066791,
+        "interbank_assets": 52.30481820397456,
+        "deposits": 353.35792674822915,
+        "interbank_liabilities": 84.72325347205984,
+        "equity": 65.26292749036463,
+        "pd": 0.02
+      },
+      {
+        "id": "B015",
+        "name": "Atlas Synthetic Bank 15",
+        "tier": "periphery",
+        "external_assets": 585.7802281306567,
+        "interbank_assets": 0.0,
+        "deposits": 468.70139860528406,
+        "interbank_liabilities": 56.96651111270083,
+        "equity": 60.11231841267187,
+        "pd": 0.02
+      },
+      {
+        "id": "B016",
+        "name": "Atlas Synthetic Bank 16",
+        "tier": "periphery",
+        "external_assets": 363.3252137954413,
+        "interbank_assets": 122.99870395527012,
+        "deposits": 425.54132801491915,
+        "interbank_liabilities": 0.0,
+        "equity": 60.78258973579224,
+        "pd": 0.02
+      },
+      {
+        "id": "B017",
+        "name": "Atlas Synthetic Bank 17",
+        "tier": "periphery",
+        "external_assets": 570.407093118003,
+        "interbank_assets": 49.34498702584787,
+        "deposits": 529.1933706941576,
+        "interbank_liabilities": 30.149970946481538,
+        "equity": 60.408738503211765,
+        "pd": 0.02
+      },
+      {
+        "id": "B018",
+        "name": "Atlas Synthetic Bank 18",
+        "tier": "periphery",
+        "external_assets": 732.1171349420864,
+        "interbank_assets": 31.37111888027196,
+        "deposits": 612.3832002687026,
+        "interbank_liabilities": 91.25074947677355,
+        "equity": 59.85430407688232,
+        "pd": 0.02
+      },
+      {
+        "id": "B019",
+        "name": "Atlas Synthetic Bank 19",
+        "tier": "periphery",
+        "external_assets": 276.3738404758739,
+        "interbank_assets": 16.150846786502495,
+        "deposits": 227.27181797738285,
+        "interbank_liabilities": 32.65851043863023,
+        "equity": 32.59435884636333,
+        "pd": 0.02
+      },
+      {
+        "id": "B020",
+        "name": "Atlas Synthetic Bank 20",
+        "tier": "periphery",
+        "external_assets": 717.7687694532152,
+        "interbank_assets": 39.6362873095332,
+        "deposits": 663.8070020745118,
+        "interbank_liabilities": 33.17188096724153,
+        "equity": 60.426173720995074,
+        "pd": 0.02
+      },
+      {
+        "id": "B021",
+        "name": "Atlas Synthetic Bank 21",
+        "tier": "periphery",
+        "external_assets": 324.0953591491615,
+        "interbank_assets": 81.63722747003939,
+        "deposits": 340.0840424133641,
+        "interbank_liabilities": 36.776650735556956,
+        "equity": 28.87189347027989,
+        "pd": 0.02
+      },
+      {
+        "id": "B022",
+        "name": "Atlas Synthetic Bank 22",
+        "tier": "periphery",
+        "external_assets": 741.286910038765,
+        "interbank_assets": 0.0,
+        "deposits": 565.4066981444203,
+        "interbank_liabilities": 117.97695463826726,
+        "equity": 57.90325725607744,
+        "pd": 0.02
+      },
+      {
+        "id": "B023",
+        "name": "Atlas Synthetic Bank 23",
+        "tier": "periphery",
+        "external_assets": 464.54538506947785,
+        "interbank_assets": 33.67407849459953,
+        "deposits": 391.0353440233899,
+        "interbank_liabilities": 37.79719537078955,
+        "equity": 69.38692416989797,
+        "pd": 0.02
+      },
+      {
+        "id": "B024",
+        "name": "Atlas Synthetic Bank 24",
+        "tier": "periphery",
+        "external_assets": 268.92504017717584,
+        "interbank_assets": 54.300651050727396,
+        "deposits": 177.19495698305195,
+        "interbank_liabilities": 112.24754467005188,
+        "equity": 33.78318957479939,
+        "pd": 0.02
+      },
+      {
+        "id": "B025",
+        "name": "Atlas Synthetic Bank 25",
+        "tier": "periphery",
+        "external_assets": 442.04373308794754,
+        "interbank_assets": 117.6391724999874,
+        "deposits": 479.6640121533442,
+        "interbank_liabilities": 10.284759600227368,
+        "equity": 69.73413383436333,
+        "pd": 0.02
+      },
+      {
+        "id": "B026",
+        "name": "Atlas Synthetic Bank 26",
+        "tier": "periphery",
+        "external_assets": 402.62922143347055,
+        "interbank_assets": 36.57523839431504,
+        "deposits": 341.209917168255,
+        "interbank_liabilities": 57.22437467944317,
+        "equity": 40.77016798008738,
+        "pd": 0.02
+      },
+      {
+        "id": "B027",
+        "name": "Atlas Synthetic Bank 27",
+        "tier": "periphery",
+        "external_assets": 309.6436177817825,
+        "interbank_assets": 124.90318179988485,
+        "deposits": 315.44275211526525,
+        "interbank_liabilities": 67.27772845240746,
+        "equity": 51.826319013994656,
+        "pd": 0.02
+      },
+      {
+        "id": "B028",
+        "name": "Atlas Synthetic Bank 28",
+        "tier": "periphery",
+        "external_assets": 654.6624854266818,
+        "interbank_assets": 24.992461697319918,
+        "deposits": 558.3723527587433,
+        "interbank_liabilities": 73.07258537320018,
+        "equity": 48.210008992058206,
+        "pd": 0.02
+      },
+      {
+        "id": "B029",
+        "name": "Atlas Synthetic Bank 29",
+        "tier": "periphery",
+        "external_assets": 432.28235825169605,
+        "interbank_assets": 44.40041429601088,
+        "deposits": 348.1502443318309,
+        "interbank_liabilities": 65.88096755811911,
+        "equity": 62.65156065775691,
+        "pd": 0.02
+      },
+      {
+        "id": "B030",
+        "name": "Atlas Synthetic Bank 30",
+        "tier": "periphery",
+        "external_assets": 233.40551849764756,
+        "interbank_assets": 32.09043772639305,
+        "deposits": 161.30413486378862,
+        "interbank_liabilities": 81.91651797596462,
+        "equity": 22.27530338428735,
+        "pd": 0.02
+      },
+      {
+        "id": "B031",
+        "name": "Atlas Synthetic Bank 31",
+        "tier": "periphery",
+        "external_assets": 521.243141773622,
+        "interbank_assets": 13.446001829213508,
+        "deposits": 422.3470012155808,
+        "interbank_liabilities": 65.96988499472086,
+        "equity": 46.37225739253384,
+        "pd": 0.02
+      },
+      {
+        "id": "B032",
+        "name": "Atlas Synthetic Bank 32",
+        "tier": "periphery",
+        "external_assets": 482.6086568094842,
+        "interbank_assets": 30.264751031151,
+        "deposits": 280.2419211990914,
+        "interbank_liabilities": 182.98380276176607,
+        "equity": 49.647683879777745,
+        "pd": 0.02
+      },
+      {
+        "id": "B033",
+        "name": "Atlas Synthetic Bank 33",
+        "tier": "periphery",
+        "external_assets": 303.5057238146579,
+        "interbank_assets": 63.126977574589525,
+        "deposits": 275.4324903262137,
+        "interbank_liabilities": 53.668014354326345,
+        "equity": 37.53219670870738,
+        "pd": 0.02
+      },
+      {
+        "id": "B034",
+        "name": "Atlas Synthetic Bank 34",
+        "tier": "periphery",
+        "external_assets": 606.8547973415533,
+        "interbank_assets": 43.23489928523415,
+        "deposits": 512.9928085118863,
+        "interbank_liabilities": 68.1720406192791,
+        "equity": 68.92484749562206,
+        "pd": 0.02
+      },
+      {
+        "id": "B035",
+        "name": "Atlas Synthetic Bank 35",
+        "tier": "periphery",
+        "external_assets": 228.69124138069571,
+        "interbank_assets": 33.57876408612,
+        "deposits": 201.3356515820286,
+        "interbank_liabilities": 27.48110940850373,
+        "equity": 33.45324447628344,
+        "pd": 0.02
+      },
+      {
+        "id": "B036",
+        "name": "Atlas Synthetic Bank 36",
+        "tier": "periphery",
+        "external_assets": 301.38924258080294,
+        "interbank_assets": 33.8027557017584,
+        "deposits": 239.420337399297,
+        "interbank_liabilities": 55.15143196268444,
+        "equity": 40.620228920579905,
+        "pd": 0.02
+      },
+      {
+        "id": "B037",
+        "name": "Atlas Synthetic Bank 37",
+        "tier": "periphery",
+        "external_assets": 400.78691347866095,
+        "interbank_assets": 98.74509207364548,
+        "deposits": 385.80283498216147,
+        "interbank_liabilities": 52.47610255194323,
+        "equity": 61.25306801820173,
+        "pd": 0.02
+      },
+      {
+        "id": "B038",
+        "name": "Atlas Synthetic Bank 38",
+        "tier": "periphery",
+        "external_assets": 339.88008561424675,
+        "interbank_assets": 35.202423123418995,
+        "deposits": 270.5464742608726,
+        "interbank_liabilities": 76.42998874130662,
+        "equity": 28.106045735486514,
+        "pd": 0.02
+      },
+      {
+        "id": "B039",
+        "name": "Atlas Synthetic Bank 39",
+        "tier": "periphery",
+        "external_assets": 432.0654702307682,
+        "interbank_assets": 15.186762335772752,
+        "deposits": 410.5373873129406,
+        "interbank_liabilities": 8.701254811152992,
+        "equity": 28.01359044244735,
+        "pd": 0.02
+      },
+      {
+        "id": "B040",
+        "name": "Atlas Synthetic Bank 40",
+        "tier": "periphery",
+        "external_assets": 273.91353633028336,
+        "interbank_assets": 99.34221280113749,
+        "deposits": 329.24106533798397,
+        "interbank_liabilities": 0.0,
+        "equity": 44.014683793436944,
+        "pd": 0.02
+      },
+      {
+        "id": "B041",
+        "name": "Atlas Synthetic Bank 41",
+        "tier": "periphery",
+        "external_assets": 659.7954928841912,
+        "interbank_assets": 62.882295428104925,
+        "deposits": 625.4119981462648,
+        "interbank_liabilities": 49.23457981620713,
+        "equity": 48.03121034982423,
+        "pd": 0.02
+      },
+      {
+        "id": "B042",
+        "name": "Atlas Synthetic Bank 42",
+        "tier": "periphery",
+        "external_assets": 747.5226661551209,
+        "interbank_assets": 124.01150061644574,
+        "deposits": 651.257111447471,
+        "interbank_liabilities": 112.37992596416348,
+        "equity": 107.89712935993215,
+        "pd": 0.02
+      },
+      {
+        "id": "B043",
+        "name": "Atlas Synthetic Bank 43",
+        "tier": "periphery",
+        "external_assets": 693.1582498383581,
+        "interbank_assets": 77.09857832559936,
+        "deposits": 616.17198222267,
+        "interbank_liabilities": 64.83188719952713,
+        "equity": 89.25295874176022,
+        "pd": 0.02
+      },
+      {
+        "id": "B044",
+        "name": "Atlas Synthetic Bank 44",
+        "tier": "periphery",
+        "external_assets": 594.5129353870842,
+        "interbank_assets": 46.401421356671285,
+        "deposits": 501.80756361334886,
+        "interbank_liabilities": 73.7287483754036,
+        "equity": 65.37804475500312,
+        "pd": 0.02
+      },
+      {
+        "id": "B045",
+        "name": "Atlas Synthetic Bank 45",
+        "tier": "periphery",
+        "external_assets": 565.3541647518546,
+        "interbank_assets": 53.303711267691284,
+        "deposits": 479.72805754395665,
+        "interbank_liabilities": 56.32119128163136,
+        "equity": 82.6086271939578,
+        "pd": 0.02
+      },
+      {
+        "id": "B046",
+        "name": "Atlas Synthetic Bank 46",
+        "tier": "periphery",
+        "external_assets": 341.5765366341206,
+        "interbank_assets": 32.40227876620575,
+        "deposits": 205.80351259174512,
+        "interbank_liabilities": 136.28943585493096,
+        "equity": 31.885866953650282,
+        "pd": 0.02
+      },
+      {
+        "id": "B047",
+        "name": "Atlas Synthetic Bank 47",
+        "tier": "periphery",
+        "external_assets": 228.10792412232993,
+        "interbank_assets": 91.74069946976357,
+        "deposits": 238.22444682724813,
+        "interbank_liabilities": 38.25768864460042,
+        "equity": 43.36648812024498,
+        "pd": 0.02
+      },
+      {
+        "id": "B048",
+        "name": "Atlas Synthetic Bank 48",
+        "tier": "periphery",
+        "external_assets": 417.36298021620155,
+        "interbank_assets": 7.454005121546436,
+        "deposits": 353.9091681331709,
+        "interbank_liabilities": 22.46697391653818,
+        "equity": 48.44084328803893,
+        "pd": 0.02
+      },
+      {
+        "id": "B049",
+        "name": "Atlas Synthetic Bank 49",
+        "tier": "periphery",
+        "external_assets": 636.9448946894171,
+        "interbank_assets": 93.6278072779304,
+        "deposits": 604.4896623262621,
+        "interbank_liabilities": 24.32885921204034,
+        "equity": 101.75418042904501,
+        "pd": 0.02
+      },
+      {
+        "id": "B050",
+        "name": "Atlas Synthetic Bank 50",
+        "tier": "periphery",
+        "external_assets": 434.2712593992075,
+        "interbank_assets": 0.0,
+        "deposits": 185.14764852652993,
+        "interbank_liabilities": 195.29090761346134,
+        "equity": 53.83270325921623,
+        "pd": 0.02
+      }
+    ],
+    "exposures": [
+      {
+        "lender": "B001",
+        "borrower": "B003",
+        "amount": 28.006688661893076
+      },
+      {
+        "lender": "B001",
+        "borrower": "B006",
+        "amount": 30.207561015093233
+      },
+      {
+        "lender": "B001",
+        "borrower": "B010",
+        "amount": 27.45415211692998
+      },
+      {
+        "lender": "B001",
+        "borrower": "B019",
+        "amount": 32.65851043863023
+      },
+      {
+        "lender": "B001",
+        "borrower": "B029",
+        "amount": 26.866622213960706
+      },
+      {
+        "lender": "B001",
+        "borrower": "B030",
+        "amount": 23.812768188802156
+      },
+      {
+        "lender": "B001",
+        "borrower": "B038",
+        "amount": 26.21687501107338
+      },
+      {
+        "lender": "B002",
+        "borrower": "B001",
+        "amount": 8.541767836366631
+      },
+      {
+        "lender": "B002",
+        "borrower": "B003",
+        "amount": 14.5604789253932
+      },
+      {
+        "lender": "B002",
+        "borrower": "B004",
+        "amount": 23.458992323034593
+      },
+      {
+        "lender": "B002",
+        "borrower": "B009",
+        "amount": 35.55455253905975
+      },
+      {
+        "lender": "B002",
+        "borrower": "B010",
+        "amount": 28.76680447007976
+      },
+      {
+        "lender": "B002",
+        "borrower": "B011",
+        "amount": 8.164282746516415
+      },
+      {
+        "lender": "B002",
+        "borrower": "B012",
+        "amount": 25.729623265554153
+      },
+      {
+        "lender": "B002",
+        "borrower": "B021",
+        "amount": 12.760829567298464
+      },
+      {
+        "lender": "B002",
+        "borrower": "B027",
+        "amount": 30.690579592605303
+      },
+      {
+        "lender": "B002",
+        "borrower": "B036",
+        "amount": 33.96042983780615
+      },
+      {
+        "lender": "B002",
+        "borrower": "B037",
+        "amount": 25.770969540649066
+      },
+      {
+        "lender": "B002",
+        "borrower": "B038",
+        "amount": 25.69769134130984
+      },
+      {
+        "lender": "B002",
+        "borrower": "B041",
+        "amount": 16.85070051237849
+      },
+      {
+        "lender": "B002",
+        "borrower": "B043",
+        "amount": 20.61875074064583
+      },
+      {
+        "lender": "B002",
+        "borrower": "B050",
+        "amount": 35.24379238353709
+      },
+      {
+        "lender": "B003",
+        "borrower": "B001",
+        "amount": 30.316211583850478
+      },
+      {
+        "lender": "B003",
+        "borrower": "B006",
+        "amount": 23.191378089354508
+      },
+      {
+        "lender": "B003",
+        "borrower": "B010",
+        "amount": 17.88813351869298
+      },
+      {
+        "lender": "B003",
+        "borrower": "B012",
+        "amount": 6.763290840099403
+      },
+      {
+        "lender": "B003",
+        "borrower": "B018",
+        "amount": 10.005259046423479
+      },
+      {
+        "lender": "B003",
+        "borrower": "B026",
+        "amount": 11.755881633877973
+      },
+      {
+        "lender": "B003",
+        "borrower": "B028",
+        "amount": 18.068424014053615
+      },
+      {
+        "lender": "B003",
+        "borrower": "B031",
+        "amount": 38.04502764766961
+      },
+      {
+        "lender": "B003",
+        "borrower": "B032",
+        "amount": 22.680368820056202
+      },
+      {
+        "lender": "B003",
+        "borrower": "B034",
+        "amount": 13.219405714073087
+      },
+      {
+        "lender": "B003",
+        "borrower": "B039",
+        "amount": 8.701254811152992
+      },
+      {
+        "lender": "B003",
+        "borrower": "B043",
+        "amount": 16.84069336110374
+      },
+      {
+        "lender": "B004",
+        "borrower": "B001",
+        "amount": 33.55057224428699
+      },
+      {
+        "lender": "B004",
+        "borrower": "B002",
+        "amount": 18.416997769367775
+      },
+      {
+        "lender": "B004",
+        "borrower": "B003",
+        "amount": 32.03770321078447
+      },
+      {
+        "lender": "B004",
+        "borrower": "B007",
+        "amount": 33.09467416444076
+      },
+      {
+        "lender": "B004",
+        "borrower": "B008",
+        "amount": 8.878726939454644
+      },
+      {
+        "lender": "B004",
+        "borrower": "B009",
+        "amount": 26.30309134193743
+      },
+      {
+        "lender": "B004",
+        "borrower": "B015",
+        "amount": 38.56836221798888
+      },
+      {
+        "lender": "B004",
+        "borrower": "B018",
+        "amount": 19.074832621624388
+      },
+      {
+        "lender": "B004",
+        "borrower": "B029",
+        "amount": 6.78304311510578
+      },
+      {
+        "lender": "B004",
+        "borrower": "B030",
+        "amount": 37.31559415902575
+      },
+      {
+        "lender": "B004",
+        "borrower": "B042",
+        "amount": 35.928319855036904
+      },
+      {
+        "lender": "B004",
+        "borrower": "B047",
+        "amount": 23.274950652315063
+      },
+      {
+        "lender": "B004",
+        "borrower": "B049",
+        "amount": 24.32885921204034
+      },
+      {
+        "lender": "B004",
+        "borrower": "B050",
+        "amount": 12.410938597164371
+      },
+      {
+        "lender": "B005",
+        "borrower": "B001",
+        "amount": 33.6807764440623
+      },
+      {
+        "lender": "B005",
+        "borrower": "B003",
+        "amount": 22.451001343724425
+      },
+      {
+        "lender": "B005",
+        "borrower": "B004",
+        "amount": 6.185722829989478
+      },
+      {
+        "lender": "B005",
+        "borrower": "B008",
+        "amount": 28.905523475714922
+      },
+      {
+        "lender": "B005",
+        "borrower": "B009",
+        "amount": 38.267369443094715
+      },
+      {
+        "lender": "B005",
+        "borrower": "B010",
+        "amount": 34.02026716210126
+      },
+      {
+        "lender": "B005",
+        "borrower": "B012",
+        "amount": 14.701934907368893
+      },
+      {
+        "lender": "B005",
+        "borrower": "B014",
+        "amount": 6.866377972666923
+      },
+      {
+        "lender": "B005",
+        "borrower": "B022",
+        "amount": 37.91229943883632
+      },
+      {
+        "lender": "B005",
+        "borrower": "B023",
+        "amount": 37.79719537078955
+      },
+      {
+        "lender": "B005",
+        "borrower": "B032",
+        "amount": 23.634536189950428
+      },
+      {
+        "lender": "B005",
+        "borrower": "B035",
+        "amount": 27.48110940850373
+      },
+      {
+        "lender": "B005",
+        "borrower": "B036",
+        "amount": 21.19100212487829
+      },
+      {
+        "lender": "B005",
+        "borrower": "B044",
+        "amount": 19.691787848456553
+      },
+      {
+        "lender": "B005",
+        "borrower": "B045",
+        "amount": 9.180695257504514
+      },
+      {
+        "lender": "B006",
+        "borrower": "B002",
+        "amount": 8.386351442638361
+      },
+      {
+        "lender": "B006",
+        "borrower": "B003",
+        "amount": 13.145625133666561
+      },
+      {
+        "lender": "B006",
+        "borrower": "B004",
+        "amount": 34.28242612422905
+      },
+      {
+        "lender": "B006",
+        "borrower": "B005",
+        "amount": 10.1041305257488
+      },
+      {
+        "lender": "B006",
+        "borrower": "B009",
+        "amount": 12.934452817014876
+      },
+      {
+        "lender": "B006",
+        "borrower": "B010",
+        "amount": 24.201492076277262
+      },
+      {
+        "lender": "B006",
+        "borrower": "B014",
+        "amount": 12.529592632739604
+      },
+      {
+        "lender": "B006",
+        "borrower": "B015",
+        "amount": 10.712233965122548
+      },
+      {
+        "lender": "B006",
+        "borrower": "B017",
+        "amount": 24.71606845942868
+      },
+      {
+        "lender": "B006",
+        "borrower": "B020",
+        "amount": 17.883264484881543
+      },
+      {
+        "lender": "B006",
+        "borrower": "B022",
+        "amount": 26.91557500441642
+      },
+      {
+        "lender": "B006",
+        "borrower": "B024",
+        "amount": 36.927186914303675
+      },
+      {
+        "lender": "B006",
+        "borrower": "B025",
+        "amount": 10.284759600227368
+      },
+      {
+        "lender": "B006",
+        "borrower": "B026",
+        "amount": 36.970178093457235
+      },
+      {
+        "lender": "B006",
+        "borrower": "B027",
+        "amount": 36.587148859802156
+      },
+      {
+        "lender": "B006",
+        "borrower": "B028",
+        "amount": 34.0180654167566
+      },
+      {
+        "lender": "B006",
+        "borrower": "B029",
+        "amount": 27.09500710571298
+      },
+      {
+        "lender": "B006",
+        "borrower": "B037",
+        "amount": 26.70513301129416
+      },
+      {
+        "lender": "B006",
+        "borrower": "B043",
+        "amount": 27.372443097777555
+      },
+      {
+        "lender": "B006",
+        "borrower": "B046",
+        "amount": 29.16734429262346
+      },
+      {
+        "lender": "B006",
+        "borrower": "B048",
+        "amount": 5.576877020865496
+      },
+      {
+        "lender": "B006",
+        "borrower": "B050",
+        "amount": 38.53324027062274
+      },
+      {
+        "lender": "B007",
+        "borrower": "B006",
+        "amount": 25.496131651295293
+      },
+      {
+        "lender": "B007",
+        "borrower": "B009",
+        "amount": 32.35130437908476
+      },
+      {
+        "lender": "B007",
+        "borrower": "B010",
+        "amount": 18.20486436714771
+      },
+      {
+        "lender": "B007",
+        "borrower": "B017",
+        "amount": 5.433902487052858
+      },
+      {
+        "lender": "B007",
+        "borrower": "B042",
+        "amount": 22.84071309567554
+      },
+      {
+        "lender": "B007",
+        "borrower": "B044",
+        "amount": 22.751654176057514
+      },
+      {
+        "lender": "B007",
+        "borrower": "B046",
+        "amount": 20.294625090900812
+      },
+      {
+        "lender": "B007",
+        "borrower": "B048",
+        "amount": 16.890096895672684
+      },
+      {
+        "lender": "B008",
+        "borrower": "B001",
+        "amount": 13.743913073340272
+      },
+      {
+        "lender": "B008",
+        "borrower": "B005",
+        "amount": 23.464070607401396
+      },
+      {
+        "lender": "B008",
+        "borrower": "B006",
+        "amount": 18.134734889272295
+      },
+      {
+        "lender": "B008",
+        "borrower": "B007",
+        "amount": 38.9476159067433
+      },
+      {
+        "lender": "B008",
+        "borrower": "B009",
+        "amount": 11.0524557718426
+      },
+      {
+        "lender": "B008",
+        "borrower": "B010",
+        "amount": 16.188294866948045
+      },
+      {
+        "lender": "B008",
+        "borrower": "B020",
+        "amount": 15.288616482359986
+      },
+      {
+        "lender": "B008",
+        "borrower": "B021",
+        "amount": 24.015821168258494
+      },
+      {
+        "lender": "B008",
+        "borrower": "B022",
+        "amount": 22.474808994095177
+      },
+      {
+        "lender": "B008",
+        "borrower": "B033",
+        "amount": 27.530916289849557
+      },
+      {
+        "lender": "B008",
+        "borrower": "B034",
+        "amount": 38.25006197009728
+      },
+      {
+        "lender": "B008",
+        "borrower": "B047",
+        "amount": 14.982737992285358
+      },
+      {
+        "lender": "B008",
+        "borrower": "B050",
+        "amount": 29.247004923924877
+      },
+      {
+        "lender": "B009",
+        "borrower": "B001",
+        "amount": 5.876407105181427
+      },
+      {
+        "lender": "B009",
+        "borrower": "B003",
+        "amount": 14.183596545676858
+      },
+      {
+        "lender": "B009",
+        "borrower": "B004",
+        "amount": 21.230190479880747
+      },
+      {
+        "lender": "B009",
+        "borrower": "B006",
+        "amount": 6.084817596839706
+      },
+      {
+        "lender": "B009",
+        "borrower": "B007",
+        "amount": 26.618431119377362
+      },
+      {
+        "lender": "B009",
+        "borrower": "B008",
+        "amount": 28.740871294059787
+      },
+      {
+        "lender": "B009",
+        "borrower": "B010",
+        "amount": 31.135610019331633
+      },
+      {
+        "lender": "B009",
+        "borrower": "B013",
+        "amount": 23.08010766950543
+      },
+      {
+        "lender": "B009",
+        "borrower": "B018",
+        "amount": 26.138063274251934
+      },
+      {
+        "lender": "B009",
+        "borrower": "B022",
+        "amount": 18.862283794747054
+      },
+      {
+        "lender": "B009",
+        "borrower": "B024",
+        "amount": 6.443856137729689
+      },
+      {
+        "lender": "B009",
+        "borrower": "B026",
+        "amount": 8.498314952107958
+      },
+      {
+        "lender": "B009",
+        "borrower": "B031",
+        "amount": 27.924857347051244
+      },
+      {
+        "lender": "B009",
+        "borrower": "B032",
+        "amount": 39.84443548550217
+      },
+      {
+        "lender": "B009",
+        "borrower": "B033",
+        "amount": 5.553113370715367
+      },
+      {
+        "lender": "B009",
+        "borrower": "B038",
+        "amount": 24.515422388923398
+      },
+      {
+        "lender": "B009",
+        "borrower": "B044",
+        "amount": 31.285306350889524
+      },
+      {
+        "lender": "B009",
+        "borrower": "B046",
+        "amount": 33.93711898048575
+      },
+      {
+        "lender": "B010",
+        "borrower": "B001",
+        "amount": 24.082171542792402
+      },
+      {
+        "lender": "B010",
+        "borrower": "B003",
+        "amount": 26.697059306443677
+      },
+      {
+        "lender": "B010",
+        "borrower": "B004",
+        "amount": 29.38537308460937
+      },
+      {
+        "lender": "B010",
+        "borrower": "B007",
+        "amount": 35.063818739270076
+      },
+      {
+        "lender": "B010",
+        "borrower": "B008",
+        "amount": 9.280133802098653
+      },
+      {
+        "lender": "B010",
+        "borrower": "B009",
+        "amount": 37.41637686962022
+      },
+      {
+        "lender": "B010",
+        "borrower": "B011",
+        "amount": 5.91060912430495
+      },
+      {
+        "lender": "B010",
+        "borrower": "B014",
+        "amount": 34.26699128352213
+      },
+      {
+        "lender": "B010",
+        "borrower": "B015",
+        "amount": 7.685914929589404
+      },
+      {
+        "lender": "B010",
+        "borrower": "B022",
+        "amount": 11.81198740617228
+      },
+      {
+        "lender": "B010",
+        "borrower": "B029",
+        "amount": 5.136295123339641
+      },
+      {
+        "lender": "B010",
+        "borrower": "B033",
+        "amount": 20.583984693761423
+      },
+      {
+        "lender": "B010",
+        "borrower": "B034",
+        "amount": 16.70257293510873
+      },
+      {
+        "lender": "B010",
+        "borrower": "B045",
+        "amount": 10.809751902045956
+      },
+      {
+        "lender": "B011",
+        "borrower": "B030",
+        "amount": 20.78815562813672
+      },
+      {
+        "lender": "B011",
+        "borrower": "B046",
+        "amount": 19.082980911026432
+      },
+      {
+        "lender": "B012",
+        "borrower": "B006",
+        "amount": 31.868136144455953
+      },
+      {
+        "lender": "B012",
+        "borrower": "B009",
+        "amount": 36.25956071245113
+      },
+      {
+        "lender": "B013",
+        "borrower": "B002",
+        "amount": 27.839853811847863
+      },
+      {
+        "lender": "B013",
+        "borrower": "B007",
+        "amount": 9.354363605428336
+      },
+      {
+        "lender": "B014",
+        "borrower": "B006",
+        "amount": 15.338677814844772
+      },
+      {
+        "lender": "B014",
+        "borrower": "B010",
+        "amount": 36.96614038912979
+      },
+      {
+        "lender": "B016",
+        "borrower": "B006",
+        "amount": 8.105707255276121
+      },
+      {
+        "lender": "B016",
+        "borrower": "B007",
+        "amount": 19.239954378678927
+      },
+      {
+        "lender": "B016",
+        "borrower": "B009",
+        "amount": 37.98766167317184
+      },
+      {
+        "lender": "B016",
+        "borrower": "B032",
+        "amount": 38.273269451432
+      },
+      {
+        "lender": "B016",
+        "borrower": "B041",
+        "amount": 19.392111196711234
+      },
+      {
+        "lender": "B017",
+        "borrower": "B010",
+        "amount": 28.35889108345791
+      },
+      {
+        "lender": "B017",
+        "borrower": "B028",
+        "amount": 20.986095942389966
+      },
+      {
+        "lender": "B018",
+        "borrower": "B008",
+        "amount": 31.37111888027196
+      },
+      {
+        "lender": "B019",
+        "borrower": "B006",
+        "amount": 6.105346574254948
+      },
+      {
+        "lender": "B019",
+        "borrower": "B007",
+        "amount": 10.045500212247546
+      },
+      {
+        "lender": "B020",
+        "borrower": "B007",
+        "amount": 26.496958124025973
+      },
+      {
+        "lender": "B020",
+        "borrower": "B009",
+        "amount": 13.139329185507226
+      },
+      {
+        "lender": "B021",
+        "borrower": "B005",
+        "amount": 28.311830474420198
+      },
+      {
+        "lender": "B021",
+        "borrower": "B008",
+        "amount": 17.292802461145442
+      },
+      {
+        "lender": "B021",
+        "borrower": "B018",
+        "amount": 36.032594534473745
+      },
+      {
+        "lender": "B023",
+        "borrower": "B024",
+        "amount": 33.67407849459953
+      },
+      {
+        "lender": "B024",
+        "borrower": "B006",
+        "amount": 22.249323002407376
+      },
+      {
+        "lender": "B024",
+        "borrower": "B032",
+        "amount": 32.05132804832002
+      },
+      {
+        "lender": "B025",
+        "borrower": "B006",
+        "amount": 14.489826018228163
+      },
+      {
+        "lender": "B025",
+        "borrower": "B007",
+        "amount": 22.29909218841519
+      },
+      {
+        "lender": "B025",
+        "borrower": "B008",
+        "amount": 11.911871815214734
+      },
+      {
+        "lender": "B025",
+        "borrower": "B009",
+        "amount": 35.131015898234786
+      },
+      {
+        "lender": "B025",
+        "borrower": "B046",
+        "amount": 33.80736657989452
+      },
+      {
+        "lender": "B026",
+        "borrower": "B005",
+        "amount": 36.57523839431504
+      },
+      {
+        "lender": "B027",
+        "borrower": "B001",
+        "amount": 35.71169434284908
+      },
+      {
+        "lender": "B027",
+        "borrower": "B004",
+        "amount": 38.58586917208232
+      },
+      {
+        "lender": "B027",
+        "borrower": "B041",
+        "amount": 12.991768107117409
+      },
+      {
+        "lender": "B027",
+        "borrower": "B050",
+        "amount": 37.61385017783604
+      },
+      {
+        "lender": "B028",
+        "borrower": "B007",
+        "amount": 24.992461697319918
+      },
+      {
+        "lender": "B029",
+        "borrower": "B004",
+        "amount": 19.787327937135323
+      },
+      {
+        "lender": "B029",
+        "borrower": "B010",
+        "amount": 24.613086358875556
+      },
+      {
+        "lender": "B030",
+        "borrower": "B006",
+        "amount": 16.991082482759722
+      },
+      {
+        "lender": "B030",
+        "borrower": "B007",
+        "amount": 15.099355243633322
+      },
+      {
+        "lender": "B031",
+        "borrower": "B003",
+        "amount": 13.446001829213508
+      },
+      {
+        "lender": "B032",
+        "borrower": "B007",
+        "amount": 7.884979630999439
+      },
+      {
+        "lender": "B032",
+        "borrower": "B010",
+        "amount": 22.37977140015156
+      },
+      {
+        "lender": "B033",
+        "borrower": "B007",
+        "amount": 36.07165864998606
+      },
+      {
+        "lender": "B033",
+        "borrower": "B050",
+        "amount": 27.055318924603462
+      },
+      {
+        "lender": "B034",
+        "borrower": "B003",
+        "amount": 23.234147146452074
+      },
+      {
+        "lender": "B034",
+        "borrower": "B007",
+        "amount": 20.000752138782076
+      },
+      {
+        "lender": "B035",
+        "borrower": "B003",
+        "amount": 21.254056921101718
+      },
+      {
+        "lender": "B035",
+        "borrower": "B008",
+        "amount": 12.324707165018282
+      },
+      {
+        "lender": "B036",
+        "borrower": "B006",
+        "amount": 33.8027557017584
+      },
+      {
+        "lender": "B037",
+        "borrower": "B001",
+        "amount": 11.943403714853481
+      },
+      {
+        "lender": "B037",
+        "borrower": "B002",
+        "amount": 30.081796485455957
+      },
+      {
+        "lender": "B037",
+        "borrower": "B004",
+        "amount": 31.599475402365343
+      },
+      {
+        "lender": "B037",
+        "borrower": "B005",
+        "amount": 25.1204164709707
+      },
+      {
+        "lender": "B038",
+        "borrower": "B024",
+        "amount": 35.202423123418995
+      },
+      {
+        "lender": "B039",
+        "borrower": "B050",
+        "amount": 15.186762335772752
+      },
+      {
+        "lender": "B040",
+        "borrower": "B001",
+        "amount": 35.85660274350022
+      },
+      {
+        "lender": "B040",
+        "borrower": "B004",
+        "amount": 30.529366085975646
+      },
+      {
+        "lender": "B040",
+        "borrower": "B042",
+        "amount": 32.95624397166162
+      },
+      {
+        "lender": "B041",
+        "borrower": "B004",
+        "amount": 28.260289833455996
+      },
+      {
+        "lender": "B041",
+        "borrower": "B006",
+        "amount": 34.622005594648925
+      },
+      {
+        "lender": "B042",
+        "borrower": "B002",
+        "amount": 39.75846019511726
+      },
+      {
+        "lender": "B042",
+        "borrower": "B004",
+        "amount": 19.70569990836235
+      },
+      {
+        "lender": "B042",
+        "borrower": "B009",
+        "amount": 33.48704892983496
+      },
+      {
+        "lender": "B042",
+        "borrower": "B014",
+        "amount": 31.060291583131175
+      },
+      {
+        "lender": "B043",
+        "borrower": "B001",
+        "amount": 20.85045579992063
+      },
+      {
+        "lender": "B043",
+        "borrower": "B002",
+        "amount": 37.44321499063792
+      },
+      {
+        "lender": "B043",
+        "borrower": "B006",
+        "amount": 18.804907535040815
+      },
+      {
+        "lender": "B044",
+        "borrower": "B003",
+        "amount": 24.791307069668314
+      },
+      {
+        "lender": "B044",
+        "borrower": "B006",
+        "amount": 8.707982494683655
+      },
+      {
+        "lender": "B044",
+        "borrower": "B008",
+        "amount": 12.902131792319318
+      },
+      {
+        "lender": "B045",
+        "borrower": "B001",
+        "amount": 34.42436596868163
+      },
+      {
+        "lender": "B045",
+        "borrower": "B004",
+        "amount": 18.879345299009657
+      },
+      {
+        "lender": "B046",
+        "borrower": "B004",
+        "amount": 18.792943129534038
+      },
+      {
+        "lender": "B046",
+        "borrower": "B005",
+        "amount": 13.609335636671709
+      },
+      {
+        "lender": "B047",
+        "borrower": "B005",
+        "amount": 22.206361700410902
+      },
+      {
+        "lender": "B047",
+        "borrower": "B010",
+        "amount": 33.20359364727179
+      },
+      {
+        "lender": "B047",
+        "borrower": "B045",
+        "amount": 36.33074412208089
+      },
+      {
+        "lender": "B048",
+        "borrower": "B009",
+        "amount": 7.454005121546436
+      },
+      {
+        "lender": "B049",
+        "borrower": "B008",
+        "amount": 25.11872559340404
+      },
+      {
+        "lender": "B049",
+        "borrower": "B010",
+        "amount": 21.35456787623171
+      },
+      {
+        "lender": "B049",
+        "borrower": "B032",
+        "amount": 26.499864766505244
+      },
+      {
+        "lender": "B049",
+        "borrower": "B042",
+        "amount": 20.65464904178942
+      }
+    ]
+  },
+  "calibration": {
+    "series": "SP500",
+    "source": "https://fred.stlouisfed.org/series/SP500",
+    "window_start": "2020-02-03",
+    "window_end": "2020-04-30",
+    "peak_date": "2020-02-19",
+    "trough_date": "2020-03-23",
+    "drawdown_magnitude": 0.3392495902426059,
+    "multiplier": 0.3,
+    "external_impairment": 0.10177487707278178,
+    "mapping": "min(1, selected-window maximum drawdown magnitude * multiplier)"
+  },
+  "result": {
+    "events": [
+      {
+        "round": 1,
+        "lender": "B001",
+        "borrower": "B030",
+        "ead": 23.812768188802156,
+        "loss": 14.287660913281293
+      },
+      {
+        "round": 1,
+        "lender": "B001",
+        "borrower": "B038",
+        "ead": 26.21687501107338,
+        "loss": 15.730125006644027
+      },
+      {
+        "round": 1,
+        "lender": "B002",
+        "borrower": "B012",
+        "ead": 25.729623265554153,
+        "loss": 15.43777395933249
+      },
+      {
+        "round": 1,
+        "lender": "B002",
+        "borrower": "B021",
+        "ead": 12.760829567298464,
+        "loss": 7.656497740379078
+      },
+      {
+        "round": 1,
+        "lender": "B002",
+        "borrower": "B038",
+        "ead": 25.69769134130984,
+        "loss": 15.418614804785904
+      },
+      {
+        "round": 1,
+        "lender": "B002",
+        "borrower": "B041",
+        "ead": 16.85070051237849,
+        "loss": 10.110420307427095
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B012",
+        "ead": 6.763290840099403,
+        "loss": 4.057974504059642
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B018",
+        "ead": 10.005259046423479,
+        "loss": 6.003155427854087
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B026",
+        "ead": 11.755881633877973,
+        "loss": 7.053528980326783
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B028",
+        "ead": 18.068424014053615,
+        "loss": 10.84105440843217
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B031",
+        "ead": 38.04502764766961,
+        "loss": 22.82701658860177
+      },
+      {
+        "round": 1,
+        "lender": "B003",
+        "borrower": "B039",
+        "ead": 8.701254811152992,
+        "loss": 5.220752886691796
+      },
+      {
+        "round": 1,
+        "lender": "B004",
+        "borrower": "B018",
+        "ead": 19.074832621624388,
+        "loss": 11.444899572974633
+      },
+      {
+        "round": 1,
+        "lender": "B004",
+        "borrower": "B030",
+        "ead": 37.31559415902575,
+        "loss": 22.38935649541545
+      },
+      {
+        "round": 1,
+        "lender": "B005",
+        "borrower": "B012",
+        "ead": 14.701934907368893,
+        "loss": 8.821160944421335
+      },
+      {
+        "round": 1,
+        "lender": "B005",
+        "borrower": "B022",
+        "ead": 37.91229943883632,
+        "loss": 22.747379663301793
+      },
+      {
+        "round": 1,
+        "lender": "B006",
+        "borrower": "B020",
+        "ead": 17.883264484881543,
+        "loss": 10.729958690928926
+      },
+      {
+        "round": 1,
+        "lender": "B006",
+        "borrower": "B022",
+        "ead": 26.91557500441642,
+        "loss": 16.149345002649852
+      },
+      {
+        "round": 1,
+        "lender": "B006",
+        "borrower": "B026",
+        "ead": 36.970178093457235,
+        "loss": 22.18210685607434
+      },
+      {
+        "round": 1,
+        "lender": "B006",
+        "borrower": "B028",
+        "ead": 34.0180654167566,
+        "loss": 20.410839250053957
+      },
+      {
+        "round": 1,
+        "lender": "B006",
+        "borrower": "B046",
+        "ead": 29.16734429262346,
+        "loss": 17.500406575574075
+      },
+      {
+        "round": 1,
+        "lender": "B007",
+        "borrower": "B046",
+        "ead": 20.294625090900812,
+        "loss": 12.176775054540487
+      },
+      {
+        "round": 1,
+        "lender": "B008",
+        "borrower": "B020",
+        "ead": 15.288616482359986,
+        "loss": 9.173169889415991
+      },
+      {
+        "round": 1,
+        "lender": "B008",
+        "borrower": "B021",
+        "ead": 24.015821168258494,
+        "loss": 14.409492700955095
+      },
+      {
+        "round": 1,
+        "lender": "B008",
+        "borrower": "B022",
+        "ead": 22.474808994095177,
+        "loss": 13.484885396457106
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B013",
+        "ead": 23.08010766950543,
+        "loss": 13.848064601703259
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B018",
+        "ead": 26.138063274251934,
+        "loss": 15.68283796455116
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B022",
+        "ead": 18.862283794747054,
+        "loss": 11.317370276848232
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B026",
+        "ead": 8.498314952107958,
+        "loss": 5.098988971264775
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B031",
+        "ead": 27.924857347051244,
+        "loss": 16.754914408230746
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B038",
+        "ead": 24.515422388923398,
+        "loss": 14.709253433354037
+      },
+      {
+        "round": 1,
+        "lender": "B009",
+        "borrower": "B046",
+        "ead": 33.93711898048575,
+        "loss": 20.36227138829145
+      },
+      {
+        "round": 1,
+        "lender": "B010",
+        "borrower": "B022",
+        "ead": 11.81198740617228,
+        "loss": 7.087192443703368
+      },
+      {
+        "round": 1,
+        "lender": "B011",
+        "borrower": "B030",
+        "ead": 20.78815562813672,
+        "loss": 12.472893376882032
+      },
+      {
+        "round": 1,
+        "lender": "B011",
+        "borrower": "B046",
+        "ead": 19.082980911026432,
+        "loss": 11.449788546615858
+      },
+      {
+        "round": 1,
+        "lender": "B016",
+        "borrower": "B041",
+        "ead": 19.392111196711234,
+        "loss": 11.63526671802674
+      },
+      {
+        "round": 1,
+        "lender": "B017",
+        "borrower": "B028",
+        "ead": 20.986095942389966,
+        "loss": 12.591657565433978
+      },
+      {
+        "round": 1,
+        "lender": "B025",
+        "borrower": "B046",
+        "ead": 33.80736657989452,
+        "loss": 20.284419947936712
+      },
+      {
+        "round": 1,
+        "lender": "B027",
+        "borrower": "B041",
+        "ead": 12.991768107117409,
+        "loss": 7.795060864270445
+      },
+      {
+        "round": 2,
+        "lender": "B005",
+        "borrower": "B001",
+        "ead": 33.6807764440623,
+        "loss": 20.208465866437383
+      },
+      {
+        "round": 2,
+        "lender": "B005",
+        "borrower": "B003",
+        "ead": 22.451001343724425,
+        "loss": 13.470600806234655
+      },
+      {
+        "round": 2,
+        "lender": "B005",
+        "borrower": "B004",
+        "ead": 6.185722829989478,
+        "loss": 3.711433697993687
+      },
+      {
+        "round": 2,
+        "lender": "B005",
+        "borrower": "B009",
+        "ead": 38.267369443094715,
+        "loss": 22.960421665856828
+      },
+      {
+        "round": 2,
+        "lender": "B007",
+        "borrower": "B006",
+        "ead": 25.496131651295293,
+        "loss": 15.297678990777175
+      },
+      {
+        "round": 2,
+        "lender": "B007",
+        "borrower": "B009",
+        "ead": 32.35130437908476,
+        "loss": 19.410782627450853
+      },
+      {
+        "round": 2,
+        "lender": "B007",
+        "borrower": "B017",
+        "ead": 5.433902487052858,
+        "loss": 3.260341492231715
+      },
+      {
+        "round": 2,
+        "lender": "B008",
+        "borrower": "B001",
+        "ead": 13.743913073340272,
+        "loss": 8.246347844004163
+      },
+      {
+        "round": 2,
+        "lender": "B008",
+        "borrower": "B006",
+        "ead": 18.134734889272295,
+        "loss": 10.880840933563377
+      },
+      {
+        "round": 2,
+        "lender": "B008",
+        "borrower": "B009",
+        "ead": 11.0524557718426,
+        "loss": 6.63147346310556
+      },
+      {
+        "round": 2,
+        "lender": "B010",
+        "borrower": "B001",
+        "ead": 24.082171542792402,
+        "loss": 14.44930292567544
+      },
+      {
+        "round": 2,
+        "lender": "B010",
+        "borrower": "B003",
+        "ead": 26.697059306443677,
+        "loss": 16.018235583866204
+      },
+      {
+        "round": 2,
+        "lender": "B010",
+        "borrower": "B004",
+        "ead": 29.38537308460937,
+        "loss": 17.631223850765622
+      },
+      {
+        "round": 2,
+        "lender": "B010",
+        "borrower": "B009",
+        "ead": 37.41637686962022,
+        "loss": 22.449826121772134
+      },
+      {
+        "round": 2,
+        "lender": "B014",
+        "borrower": "B006",
+        "ead": 15.338677814844772,
+        "loss": 9.203206688906862
+      },
+      {
+        "round": 2,
+        "lender": "B016",
+        "borrower": "B006",
+        "ead": 8.105707255276121,
+        "loss": 4.863424353165672
+      },
+      {
+        "round": 2,
+        "lender": "B016",
+        "borrower": "B009",
+        "ead": 37.98766167317184,
+        "loss": 22.792597003903104
+      },
+      {
+        "round": 2,
+        "lender": "B019",
+        "borrower": "B006",
+        "ead": 6.105346574254948,
+        "loss": 3.663207944552969
+      },
+      {
+        "round": 2,
+        "lender": "B024",
+        "borrower": "B006",
+        "ead": 22.249323002407376,
+        "loss": 13.349593801444426
+      },
+      {
+        "round": 2,
+        "lender": "B025",
+        "borrower": "B006",
+        "ead": 14.489826018228163,
+        "loss": 8.693895610936897
+      },
+      {
+        "round": 2,
+        "lender": "B025",
+        "borrower": "B009",
+        "ead": 35.131015898234786,
+        "loss": 21.07860953894087
+      },
+      {
+        "round": 2,
+        "lender": "B027",
+        "borrower": "B001",
+        "ead": 35.71169434284908,
+        "loss": 21.427016605709447
+      },
+      {
+        "round": 2,
+        "lender": "B027",
+        "borrower": "B004",
+        "ead": 38.58586917208232,
+        "loss": 23.15152150324939
+      },
+      {
+        "round": 2,
+        "lender": "B029",
+        "borrower": "B004",
+        "ead": 19.787327937135323,
+        "loss": 11.872396762281193
+      },
+      {
+        "round": 2,
+        "lender": "B034",
+        "borrower": "B003",
+        "ead": 23.234147146452074,
+        "loss": 13.940488287871244
+      },
+      {
+        "round": 2,
+        "lender": "B035",
+        "borrower": "B003",
+        "ead": 21.254056921101718,
+        "loss": 12.75243415266103
+      },
+      {
+        "round": 2,
+        "lender": "B036",
+        "borrower": "B006",
+        "ead": 33.8027557017584,
+        "loss": 20.28165342105504
+      },
+      {
+        "round": 2,
+        "lender": "B037",
+        "borrower": "B001",
+        "ead": 11.943403714853481,
+        "loss": 7.166042228912088
+      },
+      {
+        "round": 2,
+        "lender": "B037",
+        "borrower": "B002",
+        "ead": 30.081796485455957,
+        "loss": 18.049077891273573
+      },
+      {
+        "round": 2,
+        "lender": "B037",
+        "borrower": "B004",
+        "ead": 31.599475402365343,
+        "loss": 18.959685241419205
+      },
+      {
+        "round": 2,
+        "lender": "B040",
+        "borrower": "B001",
+        "ead": 35.85660274350022,
+        "loss": 21.51396164610013
+      },
+      {
+        "round": 2,
+        "lender": "B040",
+        "borrower": "B004",
+        "ead": 30.529366085975646,
+        "loss": 18.317619651585385
+      },
+      {
+        "round": 2,
+        "lender": "B042",
+        "borrower": "B002",
+        "ead": 39.75846019511726,
+        "loss": 23.855076117070354
+      },
+      {
+        "round": 2,
+        "lender": "B042",
+        "borrower": "B004",
+        "ead": 19.70569990836235,
+        "loss": 11.823419945017411
+      },
+      {
+        "round": 2,
+        "lender": "B042",
+        "borrower": "B009",
+        "ead": 33.48704892983496,
+        "loss": 20.092229357900976
+      },
+      {
+        "round": 2,
+        "lender": "B043",
+        "borrower": "B001",
+        "ead": 20.85045579992063,
+        "loss": 12.510273479952378
+      },
+      {
+        "round": 2,
+        "lender": "B043",
+        "borrower": "B002",
+        "ead": 37.44321499063792,
+        "loss": 22.46592899438275
+      },
+      {
+        "round": 2,
+        "lender": "B043",
+        "borrower": "B006",
+        "ead": 18.804907535040815,
+        "loss": 11.282944521024488
+      },
+      {
+        "round": 2,
+        "lender": "B044",
+        "borrower": "B003",
+        "ead": 24.791307069668314,
+        "loss": 14.874784241800988
+      },
+      {
+        "round": 2,
+        "lender": "B044",
+        "borrower": "B006",
+        "ead": 8.707982494683655,
+        "loss": 5.224789496810193
+      },
+      {
+        "round": 2,
+        "lender": "B045",
+        "borrower": "B001",
+        "ead": 34.42436596868163,
+        "loss": 20.654619581208976
+      },
+      {
+        "round": 2,
+        "lender": "B045",
+        "borrower": "B004",
+        "ead": 18.879345299009657,
+        "loss": 11.327607179405794
+      },
+      {
+        "round": 2,
+        "lender": "B048",
+        "borrower": "B009",
+        "ead": 7.454005121546436,
+        "loss": 4.472403072927861
+      },
+      {
+        "round": 3,
+        "lender": "B014",
+        "borrower": "B010",
+        "ead": 36.96614038912979,
+        "loss": 22.179684233477875
+      },
+      {
+        "round": 3,
+        "lender": "B019",
+        "borrower": "B007",
+        "ead": 10.045500212247546,
+        "loss": 6.027300127348528
+      },
+      {
+        "round": 3,
+        "lender": "B023",
+        "borrower": "B024",
+        "ead": 33.67407849459953,
+        "loss": 20.204447096759715
+      },
+      {
+        "round": 3,
+        "lender": "B029",
+        "borrower": "B010",
+        "ead": 24.613086358875556,
+        "loss": 14.767851815325333
+      },
+      {
+        "round": 3,
+        "lender": "B032",
+        "borrower": "B007",
+        "ead": 7.884979630999439,
+        "loss": 4.730987778599663
+      },
+      {
+        "round": 3,
+        "lender": "B032",
+        "borrower": "B010",
+        "ead": 22.37977140015156,
+        "loss": 13.427862840090937
+      },
+      {
+        "round": 3,
+        "lender": "B033",
+        "borrower": "B007",
+        "ead": 36.07165864998606,
+        "loss": 21.642995189991638
+      },
+      {
+        "round": 3,
+        "lender": "B047",
+        "borrower": "B005",
+        "ead": 22.206361700410902,
+        "loss": 13.32381702024654
+      },
+      {
+        "round": 3,
+        "lender": "B047",
+        "borrower": "B010",
+        "ead": 33.20359364727179,
+        "loss": 19.922156188363072
+      },
+      {
+        "round": 3,
+        "lender": "B047",
+        "borrower": "B045",
+        "ead": 36.33074412208089,
+        "loss": 21.798446473248532
+      },
+      {
+        "round": 3,
+        "lender": "B049",
+        "borrower": "B008",
+        "ead": 25.11872559340404,
+        "loss": 15.071235356042424
+      },
+      {
+        "round": 3,
+        "lender": "B049",
+        "borrower": "B010",
+        "ead": 21.35456787623171,
+        "loss": 12.812740725739024
+      },
+      {
+        "round": 3,
+        "lender": "B049",
+        "borrower": "B042",
+        "ead": 20.65464904178942,
+        "loss": 12.392789425073651
+      }
+    ],
+    "scenario": {
+      "name": "Market-magnitude scenario",
+      "recovery": 0.4,
+      "external_impairment": 0.10177487707278178,
+      "initial_defaults": []
+    },
+    "defaults": [
+      "B001",
+      "B002",
+      "B003",
+      "B004",
+      "B005",
+      "B006",
+      "B007",
+      "B008",
+      "B009",
+      "B010",
+      "B012",
+      "B013",
+      "B014",
+      "B016",
+      "B017",
+      "B018",
+      "B019",
+      "B020",
+      "B021",
+      "B022",
+      "B024",
+      "B025",
+      "B026",
+      "B027",
+      "B028",
+      "B029",
+      "B030",
+      "B031",
+      "B032",
+      "B033",
+      "B034",
+      "B035",
+      "B036",
+      "B037",
+      "B038",
+      "B039",
+      "B040",
+      "B041",
+      "B042",
+      "B043",
+      "B044",
+      "B045",
+      "B046",
+      "B047",
+      "B049"
+    ],
+    "initial_defaults": [
+      "B012",
+      "B013",
+      "B018",
+      "B020",
+      "B021",
+      "B022",
+      "B026",
+      "B028",
+      "B030",
+      "B031",
+      "B038",
+      "B039",
+      "B041",
+      "B046"
+    ],
+    "secondary_defaults": [
+      "B001",
+      "B002",
+      "B003",
+      "B004",
+      "B005",
+      "B006",
+      "B007",
+      "B008",
+      "B009",
+      "B010",
+      "B014",
+      "B016",
+      "B017",
+      "B019",
+      "B024",
+      "B025",
+      "B027",
+      "B029",
+      "B032",
+      "B033",
+      "B034",
+      "B035",
+      "B036",
+      "B037",
+      "B040",
+      "B042",
+      "B043",
+      "B044",
+      "B045",
+      "B047",
+      "B049"
+    ],
+    "default_count": 45,
+    "external_loss": 2648.657232843218,
+    "interbank_loss": 1339.9441305892044,
+    "equity": {
+      "B001": -13.582027397875965,
+      "B002": -15.03109343956136,
+      "B003": -13.50651921282143,
+      "B004": -16.018833053249928,
+      "B005": -25.60173554015511,
+      "B006": -30.471931468538607,
+      "B007": -19.603162322995573,
+      "B008": -23.884599616088256,
+      "B009": -60.01181677962579,
+      "B010": -64.44366578076453,
+      "B011": 5.626360402558177,
+      "B012": -14.345468026125559,
+      "B013": -22.131081835911118,
+      "B014": -12.024431676557205,
+      "B015": 0.49460770300821366,
+      "B016": -15.486077310776475,
+      "B017": -10.236030845749761,
+      "B018": -14.656827334725712,
+      "B019": -5.22406286610284,
+      "B020": -12.624654556787753,
+      "B021": -4.112871866985085,
+      "B022": -17.541126888780113,
+      "B023": 1.903427612964066,
+      "B024": -6.936217132470011,
+      "B025": -25.311737859270565,
+      "B026": -0.20737153721392332,
+      "B027": -32.061221095346966,
+      "B028": -18.41818498640413,
+      "B029": -7.984171791648199,
+      "B030": -1.4795145689196225,
+      "B031": -6.677199286507111,
+      "B032": -17.62860345995844,
+      "B033": -15.000056213406726,
+      "B034": -6.778213192713668,
+      "B035": -2.574212655519764,
+      "B036": -10.335277615195164,
+      "B037": -23.711776195073483,
+      "B038": -6.485208197389998,
+      "B039": -15.959819677682741,
+      "B040": -23.694413992834107,
+      "B041": -19.119394831639788,
+      "B042": -23.95262351711211,
+      "B043": -27.55228392288285,
+      "B044": -15.22800990080722,
+      "B045": -6.912450186862188,
+      "B046": -2.8780430732338864,
+      "B047": -34.89358749849073,
+      "B048": 1.4913742088772963,
+      "B049": -3.3475734369614543,
+      "B050": 9.634799217619758
+    },
+    "bank_external_loss": {
+      "B001": 66.95087208544399,
+      "B002": 64.32438835491944,
+      "B003": 65.49082194108222,
+      "B004": 89.64223462085884,
+      "B005": 76.30152080195641,
+      "B006": 55.83584367023625,
+      "B007": 64.3350764235552,
+      "B008": 47.63660081571255,
+      "B009": 65.91518973105046,
+      "B010": 105.48876718507415,
+      "B011": 65.71919916712804,
+      "B012": 69.04029219447649,
+      "B013": 63.49654467599527,
+      "B014": 45.9044682445371,
+      "B015": 59.617710709663655,
+      "B016": 36.9773789714732,
+      "B017": 58.05311178352755,
+      "B018": 74.51113141160803,
+      "B019": 28.12791364056467,
+      "B020": 73.05082827778283,
+      "B021": 32.984765337264975,
+      "B022": 75.44438414485755,
+      "B023": 47.279049460174186,
+      "B024": 27.369812905824972,
+      "B025": 44.98894659581942,
+      "B026": 40.9775395173013,
+      "B027": 31.51394113611234,
+      "B028": 66.62819397846233,
+      "B029": 43.995483871798584,
+      "B030": 23.754817953206974,
+      "B031": 53.04945667904095,
+      "B032": 49.117436721045586,
+      "B033": 30.88925773212247,
+      "B034": 61.762572400464485,
+      "B035": 23.27502297914217,
+      "B036": 30.67385311472003,
+      "B037": 40.790038851670346,
+      "B038": 34.59125393287651,
+      "B039": 43.97341012013009,
+      "B040": 27.877516488585535,
+      "B041": 67.15060518146402,
+      "B042": 76.07902745705552,
+      "B043": 70.54609566928346,
+      "B044": 60.506480917199156,
+      "B045": 57.53885062020522,
+      "B046": 34.76391002688417,
+      "B047": 23.215655936877564,
+      "B048": 42.47706600623377,
+      "B049": 64.82498835915136,
+      "B050": 44.19790404159647
+    },
+    "bank_interbank_loss": {
+      "B028": 0.0,
+      "B010": 77.63578092578277,
+      "B030": 0.0,
+      "B027": 52.373598973229285,
+      "B029": 26.640248577606528,
+      "B037": 44.17480536160487,
+      "B013": 0.0,
+      "B041": 0.0,
+      "B038": 0.0,
+      "B007": 50.14557816500023,
+      "B005": 91.91946264424567,
+      "B033": 21.642995189991638,
+      "B019": 9.690508071901498,
+      "B003": 56.00348279596625,
+      "B008": 62.82621022750129,
+      "B002": 48.623306811924564,
+      "B015": 0.0,
+      "B024": 13.349593801444426,
+      "B043": 46.259146995359615,
+      "B014": 31.38289092238474,
+      "B022": 0.0,
+      "B046": 0.0,
+      "B049": 40.2767655068551,
+      "B045": 31.982226760614772,
+      "B018": 0.0,
+      "B016": 39.291288075095515,
+      "B047": 55.044419681858145,
+      "B020": 0.0,
+      "B001": 30.01778591992532,
+      "B011": 23.92268192349789,
+      "B042": 55.77072541998874,
+      "B044": 20.09957373861118,
+      "B004": 33.83425606839008,
+      "B031": 0.0,
+      "B032": 18.1588506186906,
+      "B036": 20.28165342105504,
+      "B048": 4.472403072927861,
+      "B012": 0.0,
+      "B040": 39.83158129768552,
+      "B026": 0.0,
+      "B050": 0.0,
+      "B009": 97.77370104424365,
+      "B006": 86.97265637528115,
+      "B034": 13.940488287871244,
+      "B021": 0.0,
+      "B039": 0.0,
+      "B017": 12.591657565433978,
+      "B035": 12.75243415266103,
+      "B025": 50.05692509781448,
+      "B023": 20.204447096759715
+    },
+    "rounds": [
+      {
+        "round": 0,
+        "new_defaults": [
+          "B012",
+          "B013",
+          "B018",
+          "B020",
+          "B021",
+          "B022",
+          "B026",
+          "B028",
+          "B030",
+          "B031",
+          "B038",
+          "B039",
+          "B041",
+          "B046"
+        ],
+        "cumulative_defaults": 14,
+        "interbank_loss": 0.0,
+        "equity": {
+          "B001": 16.435758522049355,
+          "B002": 33.592213372363204,
+          "B003": 42.49696358314482,
+          "B004": 17.815423015140155,
+          "B005": 66.31772710409057,
+          "B006": 56.50072490674254,
+          "B007": 30.542415842004658,
+          "B008": 38.94161061141303,
+          "B009": 37.76188426461786,
+          "B010": 13.192115145018235,
+          "B011": 29.549042326056068,
+          "B012": -14.345468026125559,
+          "B013": -22.131081835911118,
+          "B014": 19.358459245827532,
+          "B015": 0.49460770300821366,
+          "B016": 23.805210764319042,
+          "B017": 2.355626719684217,
+          "B018": -14.656827334725712,
+          "B019": 4.466445205798657,
+          "B020": -12.624654556787753,
+          "B021": -4.112871866985085,
+          "B022": -17.541126888780113,
+          "B023": 22.10787470972378,
+          "B024": 6.413376668974415,
+          "B025": 24.745187238543913,
+          "B026": -0.20737153721392332,
+          "B027": 20.312377877882316,
+          "B028": -18.41818498640413,
+          "B029": 18.656076785958327,
+          "B030": -1.4795145689196225,
+          "B031": -6.677199286507111,
+          "B032": 0.5302471587321591,
+          "B033": 6.642938976584912,
+          "B034": 7.162275095157575,
+          "B035": 10.178221497141266,
+          "B036": 9.946375805859876,
+          "B037": 20.463029166531385,
+          "B038": -6.485208197389998,
+          "B039": -15.959819677682741,
+          "B040": 16.13716730485141,
+          "B041": -19.119394831639788,
+          "B042": 31.818101902876634,
+          "B043": 18.706863072476764,
+          "B044": 4.871563837803961,
+          "B045": 25.069776573752584,
+          "B046": -2.8780430732338864,
+          "B047": 20.150832183367417,
+          "B048": 5.963777281805157,
+          "B049": 36.929192069893645,
+          "B050": 9.634799217619758
+        }
+      },
+      {
+        "round": 1,
+        "new_defaults": [
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B006",
+          "B009",
+          "B017"
+        ],
+        "cumulative_defaults": 21,
+        "interbank_loss": 517.3543321276919,
+        "equity": {
+          "B001": -13.582027397875965,
+          "B002": -15.03109343956136,
+          "B003": -13.50651921282143,
+          "B004": -16.018833053249928,
+          "B005": 34.749186496367436,
+          "B006": -30.471931468538607,
+          "B007": 18.365640787464173,
+          "B008": 1.8740626245848446,
+          "B009": -60.01181677962579,
+          "B010": 6.104922701314867,
+          "B011": 5.626360402558177,
+          "B012": -14.345468026125559,
+          "B013": -22.131081835911118,
+          "B014": 19.358459245827532,
+          "B015": 0.49460770300821366,
+          "B016": 12.169944046292303,
+          "B017": -10.236030845749761,
+          "B018": -14.656827334725712,
+          "B019": 4.466445205798657,
+          "B020": -12.624654556787753,
+          "B021": -4.112871866985085,
+          "B022": -17.541126888780113,
+          "B023": 22.10787470972378,
+          "B024": 6.413376668974415,
+          "B025": 4.460767290607201,
+          "B026": -0.20737153721392332,
+          "B027": 12.517317013611871,
+          "B028": -18.41818498640413,
+          "B029": 18.656076785958327,
+          "B030": -1.4795145689196225,
+          "B031": -6.677199286507111,
+          "B032": 0.5302471587321591,
+          "B033": 6.642938976584912,
+          "B034": 7.162275095157575,
+          "B035": 10.178221497141266,
+          "B036": 9.946375805859876,
+          "B037": 20.463029166531385,
+          "B038": -6.485208197389998,
+          "B039": -15.959819677682741,
+          "B040": 16.13716730485141,
+          "B041": -19.119394831639788,
+          "B042": 31.818101902876634,
+          "B043": 18.706863072476764,
+          "B044": 4.871563837803961,
+          "B045": 25.069776573752584,
+          "B046": -2.8780430732338864,
+          "B047": 20.150832183367417,
+          "B048": 5.963777281805157,
+          "B049": 36.929192069893645,
+          "B050": 9.634799217619758
+        }
+      },
+      {
+        "round": 2,
+        "new_defaults": [
+          "B005",
+          "B007",
+          "B008",
+          "B010",
+          "B016",
+          "B024",
+          "B025",
+          "B027",
+          "B034",
+          "B035",
+          "B036",
+          "B037",
+          "B040",
+          "B042",
+          "B043",
+          "B044",
+          "B045"
+        ],
+        "cumulative_defaults": 38,
+        "interbank_loss": 624.2874841912055,
+        "equity": {
+          "B001": -13.582027397875965,
+          "B002": -15.03109343956136,
+          "B003": -13.50651921282143,
+          "B004": -16.018833053249928,
+          "B005": -25.60173554015511,
+          "B006": -30.471931468538607,
+          "B007": -19.603162322995573,
+          "B008": -23.884599616088256,
+          "B009": -60.01181677962579,
+          "B010": -64.44366578076453,
+          "B011": 5.626360402558177,
+          "B012": -14.345468026125559,
+          "B013": -22.131081835911118,
+          "B014": 10.15525255692067,
+          "B015": 0.49460770300821366,
+          "B016": -15.486077310776475,
+          "B017": -10.236030845749761,
+          "B018": -14.656827334725712,
+          "B019": 0.8032372612456875,
+          "B020": -12.624654556787753,
+          "B021": -4.112871866985085,
+          "B022": -17.541126888780113,
+          "B023": 22.10787470972378,
+          "B024": -6.936217132470011,
+          "B025": -25.311737859270565,
+          "B026": -0.20737153721392332,
+          "B027": -32.061221095346966,
+          "B028": -18.41818498640413,
+          "B029": 6.7836800236771335,
+          "B030": -1.4795145689196225,
+          "B031": -6.677199286507111,
+          "B032": 0.5302471587321591,
+          "B033": 6.642938976584912,
+          "B034": -6.778213192713668,
+          "B035": -2.574212655519764,
+          "B036": -10.335277615195164,
+          "B037": -23.711776195073483,
+          "B038": -6.485208197389998,
+          "B039": -15.959819677682741,
+          "B040": -23.694413992834107,
+          "B041": -19.119394831639788,
+          "B042": -23.95262351711211,
+          "B043": -27.55228392288285,
+          "B044": -15.22800990080722,
+          "B045": -6.912450186862188,
+          "B046": -2.8780430732338864,
+          "B047": 20.150832183367417,
+          "B048": 1.4913742088772963,
+          "B049": 36.929192069893645,
+          "B050": 9.634799217619758
+        }
+      },
+      {
+        "round": 3,
+        "new_defaults": [
+          "B014",
+          "B019",
+          "B029",
+          "B032",
+          "B033",
+          "B047",
+          "B049"
+        ],
+        "cumulative_defaults": 45,
+        "interbank_loss": 198.30231427030694,
+        "equity": {
+          "B001": -13.582027397875965,
+          "B002": -15.03109343956136,
+          "B003": -13.50651921282143,
+          "B004": -16.018833053249928,
+          "B005": -25.60173554015511,
+          "B006": -30.471931468538607,
+          "B007": -19.603162322995573,
+          "B008": -23.884599616088256,
+          "B009": -60.01181677962579,
+          "B010": -64.44366578076453,
+          "B011": 5.626360402558177,
+          "B012": -14.345468026125559,
+          "B013": -22.131081835911118,
+          "B014": -12.024431676557205,
+          "B015": 0.49460770300821366,
+          "B016": -15.486077310776475,
+          "B017": -10.236030845749761,
+          "B018": -14.656827334725712,
+          "B019": -5.22406286610284,
+          "B020": -12.624654556787753,
+          "B021": -4.112871866985085,
+          "B022": -17.541126888780113,
+          "B023": 1.903427612964066,
+          "B024": -6.936217132470011,
+          "B025": -25.311737859270565,
+          "B026": -0.20737153721392332,
+          "B027": -32.061221095346966,
+          "B028": -18.41818498640413,
+          "B029": -7.984171791648199,
+          "B030": -1.4795145689196225,
+          "B031": -6.677199286507111,
+          "B032": -17.62860345995844,
+          "B033": -15.000056213406726,
+          "B034": -6.778213192713668,
+          "B035": -2.574212655519764,
+          "B036": -10.335277615195164,
+          "B037": -23.711776195073483,
+          "B038": -6.485208197389998,
+          "B039": -15.959819677682741,
+          "B040": -23.694413992834107,
+          "B041": -19.119394831639788,
+          "B042": -23.95262351711211,
+          "B043": -27.55228392288285,
+          "B044": -15.22800990080722,
+          "B045": -6.912450186862188,
+          "B046": -2.8780430732338864,
+          "B047": -34.89358749849073,
+          "B048": 1.4913742088772963,
+          "B049": -3.3475734369614543,
+          "B050": 9.634799217619758
+        }
+      },
+      {
+        "round": 4,
+        "new_defaults": [],
+        "cumulative_defaults": 45,
+        "interbank_loss": 0.0,
+        "equity": {
+          "B001": -13.582027397875965,
+          "B002": -15.03109343956136,
+          "B003": -13.50651921282143,
+          "B004": -16.018833053249928,
+          "B005": -25.60173554015511,
+          "B006": -30.471931468538607,
+          "B007": -19.603162322995573,
+          "B008": -23.884599616088256,
+          "B009": -60.01181677962579,
+          "B010": -64.44366578076453,
+          "B011": 5.626360402558177,
+          "B012": -14.345468026125559,
+          "B013": -22.131081835911118,
+          "B014": -12.024431676557205,
+          "B015": 0.49460770300821366,
+          "B016": -15.486077310776475,
+          "B017": -10.236030845749761,
+          "B018": -14.656827334725712,
+          "B019": -5.22406286610284,
+          "B020": -12.624654556787753,
+          "B021": -4.112871866985085,
+          "B022": -17.541126888780113,
+          "B023": 1.903427612964066,
+          "B024": -6.936217132470011,
+          "B025": -25.311737859270565,
+          "B026": -0.20737153721392332,
+          "B027": -32.061221095346966,
+          "B028": -18.41818498640413,
+          "B029": -7.984171791648199,
+          "B030": -1.4795145689196225,
+          "B031": -6.677199286507111,
+          "B032": -17.62860345995844,
+          "B033": -15.000056213406726,
+          "B034": -6.778213192713668,
+          "B035": -2.574212655519764,
+          "B036": -10.335277615195164,
+          "B037": -23.711776195073483,
+          "B038": -6.485208197389998,
+          "B039": -15.959819677682741,
+          "B040": -23.694413992834107,
+          "B041": -19.119394831639788,
+          "B042": -23.95262351711211,
+          "B043": -27.55228392288285,
+          "B044": -15.22800990080722,
+          "B045": -6.912450186862188,
+          "B046": -2.8780430732338864,
+          "B047": -34.89358749849073,
+          "B048": 1.4913742088772963,
+          "B049": -3.3475734369614543,
+          "B050": 9.634799217619758
+        }
+      }
+    ]
+  },
+  "advanced": {
+    "parameters": {
+      "network": {
+        "banks": 50,
+        "seed": 42,
+        "topology": "core_periphery"
+      },
+      "impact_ranking": {
+        "recovery": 0.4,
+        "external_impairment": 0
+      },
+      "sensitivity": {
+        "recoveries": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        "multipliers": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5
+        ]
+      },
+      "topology_ensemble": {
+        "banks": 50,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "impairment": 0.08,
+        "recovery": 0.4
+      },
+      "monte_carlo": {
+        "scenario": {
+          "name": "Conditional independent-default experiment",
+          "recovery": 0.4,
+          "external_impairment": 0.03,
+          "initial_defaults": []
+        },
+        "trials": 500,
+        "seed": 20261030,
+        "pd_override": 0.02
+      },
+      "baseline_comparison": {
+        "chain": {
+          "name": "Hand chain baseline",
+          "recovery": 0.4,
+          "external_impairment": 0,
+          "initial_defaults": [
+            "B"
+          ]
+        },
+        "seed42": {
+          "name": "Seed42 baseline comparison",
+          "recovery": 0.4,
+          "external_impairment": 0.10177487707278178,
+          "initial_defaults": []
+        }
+      }
+    },
+    "monte_carlo_summary": {
+      "trials": 500,
+      "conditional_summary": {
+        "defaults": {
+          "mean": 1.086,
+          "mcse_mean": 0.048764371500673635,
+          "empirical_q05": 0.0,
+          "empirical_median": 1.0,
+          "empirical_q95": 3.0
+        },
+        "secondary_defaults": {
+          "mean": 0.04,
+          "mcse_mean": 0.009217914074223057,
+          "empirical_q05": 0.0,
+          "empirical_median": 0.0,
+          "empirical_q95": 0.0
+        },
+        "interbank_loss": {
+          "mean": 62.220345555198946,
+          "mcse_mean": 3.719807750134812,
+          "empirical_q05": 0.0,
+          "empirical_median": 28.31690940781347,
+          "empirical_q95": 223.739971259486
+        }
+      }
+    }
+  },
+  "interpretation": "Synthetic model output; no historical bank defaults or bilateral network inferred."
+}

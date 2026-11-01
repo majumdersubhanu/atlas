@@ -1,0 +1,14 @@
+import {Client} from '@modelcontextprotocol/sdk/client/index.js';
+import {StdioClientTransport} from '@modelcontextprotocol/sdk/client/stdio.js';
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+const client=new Client({name:'atlas-qa',version:'1.0.0'});
+const transport=new StdioClientTransport({command:process.execPath,args:['node_modules/@playwright/mcp/cli.js','--headless','--isolated','--executable-path',chromium.executablePath()],stderr:'pipe'});
+await client.connect(transport);
+const listing=await client.listTools();
+fs.writeFileSync('../reports/playwright-mcp-tools.json',JSON.stringify(listing.tools.map(t=>({name:t.name,inputSchema:t.inputSchema})),null,2));
+const result=await client.callTool({name:'browser_navigate',arguments:{url:'http://127.0.0.1:8000/health'}});
+fs.writeFileSync('../reports/playwright-mcp-smoke.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify({toolCount:listing.tools.length,result}));
+await client.close();
+if(result.isError) process.exit(1);
