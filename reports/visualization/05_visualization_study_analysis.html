@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Atlas · Mid-term research</title>
+<style>body{max-width:1050px;margin:40px auto;padding:0 25px;background:#fffefa;color:#183332;
+font:16px/1.65 system-ui,sans-serif}h1{font:42px/1.2 Georgia,serif;color:#166c60}h2{margin-top:45px}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto}th,td{padding:10px;
+border-bottom:1px solid #dce2d9;text-align:left}th{background:#edf2eb}pre{padding:15px;background:#f1f3ed;
+overflow:auto;font-size:12px;white-space:pre-wrap}img{max-width:100%;height:auto}a{color:#166c60}
+code{font-size:.9em}blockquote{border-left:3px solid #166c60;padding-left:20px}
+@media print{body{margin:0;font-size:11px}h2{break-after:avoid}img{max-height:500px}}</style>
+<body><p>ATLAS / OFFLINE MID-TERM DEMONSTRATION / 2 NOVEMBER 2026</p><h1 id="ATLAS-%C2%B7-Visualization-study-analysis-scaffold">ATLAS &#183; Visualization study analysis scaffold<a class="anchor-link" href="#ATLAS-%C2%B7-Visualization-study-analysis-scaffold">&#182;</a></h1><p><strong>Status: no participant data collected.</strong> This notebook intentionally reports “not evaluated.”
+It is ready to validate the agreed schema and compute per-task participant-paired descriptive
+summaries when genuine eligible study data become available. It is not a completed final analysis.</p>
+<p>Recruitment will be open through a Google Form, with relevant knowledge/interest, a tutorial,
+comprehension screening, consent and experience recording. Financial analysts are especially
+relevant; claims must describe the people actually recruited. Practice rows are never study evidence.</p>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>input_rows</th>
+      <th>excluded_nonstudy_rows</th>
+      <th>excluded_ineligible_rows</th>
+      <th>eligible_study_rows</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Descriptive study records only; eligibility is...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<pre>NOT EVALUATED: no eligible participant records.
+</pre>
+<h2 id="Proposed-estimands">Proposed estimands<a class="anchor-link" href="#Proposed-estimands">&#182;</a></h2><ul>
+<li>Primary: participant-level accuracy difference (graph − matrix) over propagation tasks,
+with equal weighting of the frozen task/stimulus cells.</li>
+<li>Secondary: capped elapsed-time difference alongside errors and timeouts; blind explanation
+score difference; confidence as a separate subjective measure.</li>
+<li>Exploratory: direct lookup, size/density, experience and professional analyst subgroup.</li>
+</ul>
+<p>The helper below computes <strong>per-task</strong> paired summaries only. Equal trial counts do not prove
+balanced stimuli. Final combined analysis, stimulus effects, exclusions, multiplicity and
+power/precision planning must be frozen before main collection. Bootstrap intervals resample
+participants, not independent trials. No confidence interval is produced for a single pair.</p>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>task</th>
+      <th>paired_participants</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lookup</td>
+      <td>0</td>
+      <td>not evaluated</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>secondary</td>
+      <td>0</td>
+      <td>not evaluated</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>path</td>
+      <td>0</td>
+      <td>not evaluated</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<pre>No effect sizes, p-values, task-time advantages or workload results can be reported.
+</pre>
+<h2 id="Before-promoting-this-to-the-main-analysis">Before promoting this to the main analysis<a class="anchor-link" href="#Before-promoting-this-to-the-main-analysis">&#182;</a></h2><ol>
+<li>Agree and freeze the question, hypotheses and study protocol with the supervisor.</li>
+<li>Pilot a counterbalanced runner using parallel nontrivial stimuli; do not reuse the teaching chain.</li>
+<li>Publish the invitation only after consent, data handling and any institutional review are settled.</li>
+<li>Record condition order, task order, fixture/version/hash, interruptions and experience strata.</li>
+<li>Apply predefined exclusions, retaining incorrect responses and timeouts.</li>
+<li>Report paired effects, intervals, uncertainty, sample composition and qualitative explanations.</li>
+</ol>
+<p>Dashboard practice exports are rehearsal data with a different schema. Do not rename their
+record type to manufacture study rows. Artificial records used in unit tests are software checks,
+not observations and never enter these saved notebook outputs.</p>
+<p>See <code>docs/VISUALIZATION_STUDY_PROTOCOL.md</code> and <code>data/study/README.md</code>.</p>
+</body></html>

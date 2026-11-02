@@ -8,6 +8,8 @@
   "name": "atlas-browser-qa",
   "private": true,
   "scripts": {
+    "dashboard": "node dashboard.mjs",
+    "builder": "node manual-builder.mjs",
     "qa": "node qa.mjs",
     "smoke": "node mcp-smoke.mjs",
     "inspect": "node inspect.mjs"

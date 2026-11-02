@@ -1,4 +1,81 @@
-# Verification — uv-managed review checkout, 1 November 2026
+# Verification
+
+## Dark workspace and manual networks — 2 November 2026
+
+- **62 Python tests passed**, including independent manual-network accounting,
+  invalid exposures, finite values and zero/negative deposit boundaries. One existing
+  Starlette/httpx deprecation warning remains.
+- **21 Chromium checks passed**: 13 dashboard regressions plus 8 manual-builder
+  checks. See [builder evidence](../reports/visualization/manual-builder-qa.json)
+  and [dashboard evidence](../reports/visualization/browser-qa.json).
+- Manual construction of the teaching chain reproduces deposits **70, 50, 140**
+  and cascade loss **108**. UI tests also cover self/duplicate loans, invalid account
+  balances, bank removal with incident loans, cancellation, clicked connections,
+  browser-local draft recovery and rejected API responses.
+- Dark workspace and native builder dialog inspected at desktop and 390px mobile
+  widths. [Desktop builder](../reports/visualization/manual-builder-desktop.png)
+  and [mobile builder](../reports/visualization/manual-builder-mobile.png).
+- Ruff lint/format pass for **31 Python files**; JavaScript syntax and diff checks pass.
+
+The saved notebook numerical outputs below remain the preceding experiment snapshot;
+their original source hashes are retained. New UI/API modules do not retroactively
+change that provenance. Updated browser screenshots reflect the dark interface.
+No participant study has been conducted.
+
+## Earlier visual comparison MVP snapshot — 2 November 2026
+
+Current local evidence for the mid-term work. These checks are software verification,
+not participant observations or proof of visualization effectiveness.
+
+| Check | Result |
+| --- | --- |
+| `uv run --locked pytest -q` | **56 passed**, one existing Starlette/httpx deprecation warning |
+| Ruff lint and format checks | Passed; 29 Python files formatted |
+| `git diff --check` | Passed |
+| Fresh-kernel notebook 04 execution | Passed; hand-computed losses, recovery boundaries, branching and five matrix-edge parity cases |
+| Fresh-kernel notebook 05 execution | Passed; zero participant records, explicitly “not evaluated” |
+| Code-hidden HTML export | Both notebooks exported with embedded figures and no remote scripts |
+| Chromium dashboard QA | **13 checks passed**; [machine-readable evidence](../reports/visualization/browser-qa.json) |
+| Desktop/mobile rendering | Inspected; 1440px / 390px layouts, no page-level horizontal overflow |
+| Graph/matrix controls | Isolation, same results, round trace, bank inspection, scenario controls and boundaries passed |
+| Error/retry behavior | Injected API failure visible; invalid generator inputs cannot silently reuse older results |
+| Downloads / practice mode | Evidence JSON valid; conditions lock and answer tables hide; automated practice exported only as rehearsal |
+| API documentation | OpenAPI includes new routes; Swagger renders `/visualization` |
+| Offline presentation | Both HTML reports opened offline with figures loaded |
+| Dashboard dependencies | No remote HTTP requests or page JavaScript errors in the dashboard checks |
+| Package build | Source archive and wheel built; all three static assets present in current 0.5.0 wheel and byte-identical to source |
+| Provenance | Notebook summary's Python-source hashes match the final `src/atlas` files |
+| Documentation links | New panel documentation's local links resolve |
+
+New numerical controls independently verify the chain (direct 60, cascade 108),
+branch (direct 90, cascade 180), fixed-coordinate parity and API validation. Study
+analysis tests use artificial **unit-test records only**; notebook 05 contains no
+fabricated people or outcomes. Automated browser answers are discarded after QA,
+not added to `data/study/`.
+
+Reports: [numerical summary](../reports/visualization/summary.json),
+[engineering smoke measurements](../reports/visualization/engineering_checks.csv),
+[desktop screenshot](../reports/visualization/dashboard-desktop.png),
+[mobile screenshot](../reports/visualization/dashboard-mobile.png), and
+[artifact manifest](../reports/visualization/artifact_manifest.json).
+
+The payload timing values are three-repeat local engineering diagnostics including
+layout and graph metrics. They are not browser-rendering or human task times and
+do not compare visualization effectiveness. The teaching chain has a fixed horizontal
+layout; other layouts use the documented seeded spring algorithm.
+
+The full older notebook/browser suite was not rerun; notebooks 01–03 and frozen FDIC
+inputs were preserved. CI was extended for notebooks 04/05 but was not executed on
+GitHub in this work. The launcher now prints the dashboard URL and selects notebook
+04 by default (`--notebook 03` retains the earlier workflow); its existing preflight
+test passes, while the new API itself was exercised through HTTP and Chromium.
+
+The formal participant runner, recruitment form publication, counterbalancing,
+consent/storage workflow and human study remain future work. The practice recorder
+does not satisfy those requirements. Changes are local and have not been committed,
+pushed or deployed publicly.
+
+## Earlier verification — uv-managed review checkout, 1 November 2026
 
 ## Current checks
 

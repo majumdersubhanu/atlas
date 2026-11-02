@@ -1,5 +1,11 @@
 # Evaluation milestone — 2 November 2026
 
+**Scope update:** this document preserves the financial-analysis walkthrough. The
+current mid-term presentation now reconnects that foundation to the original
+visualization question. Start with [MIDTERM_RESEARCH_BRIEF.md](MIDTERM_RESEARCH_BRIEF.md)
+and notebook 04 for the implemented graph/matrix MVP. Human effectiveness remains
+untested; statements below about the earlier deliverable are historical context.
+
 ## Question and deliverable
 
 **How does an assumed asset loss affect bank capital, and how can lending

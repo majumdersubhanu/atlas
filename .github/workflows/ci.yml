@@ -23,4 +23,8 @@ jobs:
         run: uv run --locked jupyter nbconvert --to notebook --execute notebooks/03_real_data_defense.ipynb --output executed.ipynb --output-dir .runtime --ExecutePreprocessor.timeout=180
       - name: Smoke-test synthetic CLI
         run: uv run --locked atlas-demo --banks 10 --output experiments/quick_demo
+      - name: Execute visual comparison and empty-study analysis
+        run: |
+          uv run --locked jupyter nbconvert --to notebook --execute notebooks/04_visualization_comparison.ipynb --output executed-04.ipynb --output-dir .runtime --ExecutePreprocessor.timeout=180
+          uv run --locked jupyter nbconvert --to notebook --execute notebooks/05_visualization_study_analysis.ipynb --output executed-05.ipynb --output-dir .runtime --ExecutePreprocessor.timeout=180
       - run: uv build --no-sources

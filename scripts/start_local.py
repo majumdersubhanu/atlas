@@ -17,6 +17,13 @@ from urllib.parse import quote
 from jupyter_server.serverapp import list_running_servers
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTEBOOKS = {
+    "01": "01_atlas_pipeline.ipynb",
+    "02": "02_research_experiments.ipynb",
+    "03": "03_real_data_defense.ipynb",
+    "04": "04_visualization_comparison.ipynb",
+    "05": "05_visualization_study_analysis.ipynb",
+}
 
 
 def port_available(port: int) -> bool:
@@ -33,6 +40,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--jupyter-port", type=int, default=8888)
     parser.add_argument("--api-port", type=int, default=8000)
+    parser.add_argument("--notebook", choices=NOTEBOOKS, default="04")
     args = parser.parse_args()
     ports = (args.jupyter_port, args.api_port)
     if len(set(ports)) != 2 or any(not 1 <= port <= 65535 for port in ports):
@@ -85,12 +93,13 @@ def main() -> None:
                     raise RuntimeError("Jupyter did not supply a token; inspect its authentication settings")
                 url = (
                     f"http://127.0.0.1:{args.jupyter_port}/lab/tree/"
-                    f"notebooks/03_real_data_defense.ipynb?token={quote(token, safe='')}"
+                    f"notebooks/{NOTEBOOKS[args.notebook]}?token={quote(token, safe='')}"
                 )
                 fd = os.open(url_file, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
                 with os.fdopen(fd, "w", encoding="utf-8") as handle:
                     handle.write(url)
                 print(f"Notebook: {url}", flush=True)
+                print(f"Dashboard: http://127.0.0.1:{args.api_port}/", flush=True)
                 print(f"API: http://127.0.0.1:{args.api_port}/docs", flush=True)
                 print("Ctrl-C stops both services. Logs: .runtime/", flush=True)
                 break

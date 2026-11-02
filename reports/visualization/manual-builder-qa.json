@@ -1,0 +1,37 @@
+{
+  "kind": "automated manual network software verification",
+  "results": [
+    {
+      "name": "Compact dark graph-first workspace",
+      "status": "PASS"
+    },
+    {
+      "name": "Build the hand-computed chain from scratch",
+      "status": "PASS"
+    },
+    {
+      "name": "Reject invalid loans and negative residual accounts",
+      "status": "PASS"
+    },
+    {
+      "name": "Removing banks deletes their loans, but cancel preserves the active network",
+      "status": "PASS"
+    },
+    {
+      "name": "Canvas connection and saved draft recovery",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual menu cancel and failed server validation do not apply a draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile builder fits the screen and remains usable",
+      "status": "PASS"
+    },
+    {
+      "name": "No browser script errors",
+      "status": "PASS"
+    }
+  ]
+}

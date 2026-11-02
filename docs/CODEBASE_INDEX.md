@@ -1,5 +1,30 @@
 # Atlas codebase index
 
+## Visual comparison additions — 2 November 2026
+
+The current panel entry point is [MIDTERM_RESEARCH_BRIEF.md](MIDTERM_RESEARCH_BRIEF.md).
+The existing observed-data and synthetic modules below remain the numerical foundation.
+
+| Addition | Role |
+| --- | --- |
+| `src/atlas/manual.py`, `POST /networks/manual` | Validated manual bank/loan builder with residual deposits and explicit accounting errors |
+| `static/builder.js`, `static/workbench.css` | Dark graph-first workspace, draft editor, connection preview and local draft recovery |
+| `src/atlas/visualization.py` | Three-/six-bank fixtures, stable graph coordinates, shared matrix/cascade/control payload |
+| `src/atlas/static/` | Local dashboard: graph, matrix, round replay, inspection, live scenario controls, evidence export and practice recorder |
+| `src/atlas/study.py` | Eligible-study validation and per-task paired descriptive summaries; no participants yet |
+| `GET /`, `GET /fixtures/{name}`, `POST /visualization` | Dashboard and documented comparison API |
+| `notebooks/04_visualization_comparison.ipynb` | Executed numerical and visual-evidence comparisons |
+| `notebooks/05_visualization_study_analysis.ipynb` | Empty-data-safe study analysis scaffold |
+| `scripts/build_visualization_notebooks.py` | Authors notebooks 04/05; overwrites those notebooks, not needed for replay |
+| `scripts/export_visualization_report.py` | Code-hidden offline HTML with embedded plots |
+| `tests/test_visualization.py`, `tests/test_study.py` | New parity/arithmetic/API and analysis controls |
+| `browser-tests/dashboard.mjs` | Browser interactions, responsive views, downloads and offline report checks |
+| `data/study/`, `reports/visualization/` | Empty schema; saved MVP numerical/browser evidence |
+
+See [implementation](VISUALIZATION_IMPLEMENTATION.md) and [study protocol](VISUALIZATION_STUDY_PROTOCOL.md).
+The launcher now opens notebook 04 and prints the dashboard URL. The following is
+the earlier source index, retained for navigation of the financial foundation.
+
 Updated 1 November 2026 from the current workspace. This is a navigation map of the active source tree; archived releases, environments, caches, and generated artifacts are not separate implementations.
 
 ## Start here

@@ -1,0 +1,1 @@
+record_type,participant_id,trial_id,stimulus_id,task,representation,correct,duration_seconds,timeout,eligible,experience_group,dataset_hash

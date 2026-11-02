@@ -1,0 +1,339 @@
+{
+  "dataset_hash": "c58133d2fbd1cb1e471ae038ddbb5973825e928d7faf27accd6a175664b070cc",
+  "dataset": {
+    "schema_version": "1.0",
+    "synthetic": true,
+    "units": "synthetic teaching units",
+    "seed": 42,
+    "topology": "teaching_chain",
+    "banks": [
+      {
+        "id": "A",
+        "name": "Bank A",
+        "tier": "other",
+        "external_assets": 100.0,
+        "interbank_assets": 100.0,
+        "deposits": 70.0,
+        "interbank_liabilities": 80.0,
+        "equity": 50.0,
+        "pd": 0.02
+      },
+      {
+        "id": "B",
+        "name": "Bank B",
+        "tier": "other",
+        "external_assets": 200.0,
+        "interbank_assets": 0.0,
+        "deposits": 50.0,
+        "interbank_liabilities": 100.0,
+        "equity": 50.0,
+        "pd": 0.02
+      },
+      {
+        "id": "C",
+        "name": "Bank C",
+        "tier": "other",
+        "external_assets": 100.0,
+        "interbank_assets": 80.0,
+        "deposits": 140.0,
+        "interbank_liabilities": 0.0,
+        "equity": 40.0,
+        "pd": 0.02
+      }
+    ],
+    "exposures": [
+      {
+        "lender": "A",
+        "borrower": "B",
+        "amount": 100.0
+      },
+      {
+        "lender": "C",
+        "borrower": "A",
+        "amount": 80.0
+      }
+    ]
+  },
+  "scenario": {
+    "name": "Custom scenario",
+    "recovery": 0.4,
+    "external_impairment": 0.0,
+    "initial_defaults": [
+      "B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "A",
+      "name": "Bank A",
+      "tier": "other",
+      "external_assets": 100.0,
+      "interbank_assets": 100.0,
+      "deposits": 70.0,
+      "interbank_liabilities": 80.0,
+      "equity": 50.0,
+      "pd": 0.02,
+      "x": 0.0,
+      "y": 0.0,
+      "default_round": 1
+    },
+    {
+      "id": "B",
+      "name": "Bank B",
+      "tier": "other",
+      "external_assets": 200.0,
+      "interbank_assets": 0.0,
+      "deposits": 50.0,
+      "interbank_liabilities": 100.0,
+      "equity": 50.0,
+      "pd": 0.02,
+      "x": 1.0,
+      "y": 0.0,
+      "default_round": 0
+    },
+    {
+      "id": "C",
+      "name": "Bank C",
+      "tier": "other",
+      "external_assets": 100.0,
+      "interbank_assets": 80.0,
+      "deposits": 140.0,
+      "interbank_liabilities": 0.0,
+      "equity": 40.0,
+      "pd": 0.02,
+      "x": -1.0,
+      "y": 0.0,
+      "default_round": 2
+    }
+  ],
+  "edges": [
+    {
+      "lender": "A",
+      "borrower": "B",
+      "amount": 100.0
+    },
+    {
+      "lender": "C",
+      "borrower": "A",
+      "amount": 80.0
+    }
+  ],
+  "matrix": {
+    "ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "values": [
+      [
+        0.0,
+        100.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        80.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "cascade": {
+    "events": [
+      {
+        "round": 1,
+        "lender": "A",
+        "borrower": "B",
+        "ead": 100.0,
+        "loss": 60.0
+      },
+      {
+        "round": 2,
+        "lender": "C",
+        "borrower": "A",
+        "ead": 80.0,
+        "loss": 48.0
+      }
+    ],
+    "scenario": {
+      "name": "Custom scenario",
+      "recovery": 0.4,
+      "external_impairment": 0,
+      "initial_defaults": [
+        "B"
+      ]
+    },
+    "defaults": [
+      "A",
+      "B",
+      "C"
+    ],
+    "initial_defaults": [
+      "B"
+    ],
+    "secondary_defaults": [
+      "A",
+      "C"
+    ],
+    "default_count": 3,
+    "external_loss": 0.0,
+    "interbank_loss": 108.0,
+    "equity": {
+      "A": -10.0,
+      "B": 50.0,
+      "C": -8.0
+    },
+    "bank_external_loss": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "bank_interbank_loss": {
+      "B": 0.0,
+      "A": 60.0,
+      "C": 48.0
+    },
+    "rounds": [
+      {
+        "round": 0,
+        "new_defaults": [
+          "B"
+        ],
+        "cumulative_defaults": 1,
+        "interbank_loss": 0.0,
+        "equity": {
+          "A": 50.0,
+          "B": 50.0,
+          "C": 40.0
+        }
+      },
+      {
+        "round": 1,
+        "new_defaults": [
+          "A"
+        ],
+        "cumulative_defaults": 2,
+        "interbank_loss": 60.0,
+        "equity": {
+          "A": -10.0,
+          "B": 50.0,
+          "C": 40.0
+        }
+      },
+      {
+        "round": 2,
+        "new_defaults": [
+          "C"
+        ],
+        "cumulative_defaults": 3,
+        "interbank_loss": 48.0,
+        "equity": {
+          "A": -10.0,
+          "B": 50.0,
+          "C": -8.0
+        }
+      },
+      {
+        "round": 3,
+        "new_defaults": [],
+        "cumulative_defaults": 3,
+        "interbank_loss": 0.0,
+        "equity": {
+          "A": -10.0,
+          "B": 50.0,
+          "C": -8.0
+        }
+      }
+    ]
+  },
+  "baseline": {
+    "method": "direct_loss_only",
+    "scenario": {
+      "name": "Custom scenario",
+      "recovery": 0.4,
+      "external_impairment": 0,
+      "initial_defaults": [
+        "B"
+      ]
+    },
+    "initial_defaults": [
+      "B"
+    ],
+    "secondary_defaults": [
+      "A"
+    ],
+    "defaults": [
+      "A",
+      "B"
+    ],
+    "default_count": 2,
+    "external_loss": 0.0,
+    "interbank_loss": 60.0,
+    "bank_external_loss": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "bank_interbank_loss": {
+      "A": 60.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "equity": {
+      "A": -10.0,
+      "B": 50.0,
+      "C": 40.0
+    },
+    "propagation_generations": 1,
+    "interpretation": "Direct-loss-only experimental control; subsequent failures do not transmit."
+  },
+  "metrics": {
+    "banks": 3,
+    "edges": 2,
+    "directed_density": 0.3333333333333333,
+    "weak_components": 1,
+    "strong_components": 3,
+    "bank_metrics": [
+      {
+        "id": "A",
+        "creditor_count": 1,
+        "borrower_count": 1,
+        "borrowing": 80.0,
+        "lending": 100.0,
+        "unweighted_betweenness": 0.5
+      },
+      {
+        "id": "B",
+        "creditor_count": 1,
+        "borrower_count": 0,
+        "borrowing": 100.0,
+        "lending": 0.0,
+        "unweighted_betweenness": 0.0
+      },
+      {
+        "id": "C",
+        "creditor_count": 0,
+        "borrower_count": 1,
+        "borrowing": 0.0,
+        "lending": 80.0,
+        "unweighted_betweenness": 0.0
+      }
+    ]
+  },
+  "comparison": {
+    "additional_defaults": 1,
+    "additional_interbank_loss": 48.0,
+    "visualization_effect": "not evaluated; requires human participants"
+  },
+  "conventions": {
+    "loan_direction": "lender \u2192 borrower",
+    "loss_direction": "borrower \u2192 surviving lender",
+    "matrix": "rows = lenders; columns = borrowers; cells = original loan amounts",
+    "rounds": "computational rounds, not calendar time",
+    "interpretation": "Synthetic conditional experiment; not a historical failure prediction"
+  }
+}

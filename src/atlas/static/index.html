@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atlas · Contagion laboratory</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><text y=%2232%22 font-size=%2232%22>◈</text></svg>">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/workbench.css">
+  <script src="/static/app.js" defer></script>
+  <script src="/static/builder.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/" aria-label="Atlas home"><span class="brand-mark">◈</span> ATLAS <span class="brand-sub">RESEARCH LAB</span></a><nav><span class="pill"><span class="status-dot"></span> SYNTHETIC NETWORK LAB</span><a href="/docs" target="_blank" rel="noopener">API docs ↗</a></nav></header>
+<main>
+  <section class="workspace-bar"><div><p class="eyebrow">SYSTEMIC RISK / NETWORK LAB</p><h1>Contagion workspace</h1><p class="lede">Build a network. Apply a shock. Trace what happens next.</p></div><div class="workspace-actions"><button id="restore-draft" class="subtle" hidden>Resume draft</button><button id="edit-network" class="subtle" disabled>Edit current network</button><button id="new-network" class="primary">＋ New network</button></div></section>
+  <div id="error" role="alert" hidden></div>
+  <div class="workspace">
+    <aside class="controls panel"><div class="panel-heading"><h2>Scenario</h2><span class="step-label">01 / CONFIGURE</span></div>
+      <label for="fixture">Network</label><select id="fixture"><option value="chain">Three-bank chain · guided example</option><option value="branch">Six-bank branching network</option><option value="generated">Generated network</option><option value="manual" id="manual-option">Build manually…</option></select>
+      <div id="generation" hidden><label for="topology">Network family</label><select id="topology"><option value="core_periphery">Core–periphery</option><option value="random">Random</option><option value="scale_free">Preferential attachment</option></select><div class="two-fields"><div><label for="banks">Banks (2–50)</label><input id="banks" type="number" min="2" max="50" value="12"></div><div><label for="seed">Seed</label><input id="seed" type="number" min="0" max="4294967295" value="42"></div></div></div>
+      <button id="edit-manual" class="subtle" hidden>Edit banks &amp; loans</button>
+      <label for="initial">Initial forced failure</label><select id="initial"><option value="B">Bank B</option></select>
+      <div class="range-title"><label for="recovery">Recovery</label><output id="recovery-value" for="recovery">40%</output></div><input id="recovery" type="range" min="0" max="100" step="1" value="40"><p class="hint">How much of each failed borrower’s loan is recovered.</p>
+      <div class="range-title"><label for="shock">External asset loss</label><output id="shock-value" for="shock">0%</output></div><input id="shock" type="range" min="0" max="30" step="1" value="0"><p class="hint">Applied once to external assets, before the cascade.</p>
+      <button id="run" class="primary">Run scenario <span>→</span></button><button id="reset" class="subtle">Reset guided example</button>
+      <div class="assumptions"><h3>Read this model correctly</h3><p>Fictional banks · fixed recovery · failure at equity ≤ 0.</p><p>Arrows show <b>lender → borrower</b>. Losses travel back toward the lender.</p><p id="units">Amounts: synthetic teaching units.</p><p>Real-time controls rerun a local model; this is not a live market feed.</p></div>
+    </aside>
+    <div class="results" id="results" aria-busy="true">
+      <section class="metrics" aria-label="Scenario results"><article><span>Final failures</span><strong id="failures">—</strong><small id="failure-breakdown">Awaiting scenario</small></article><article><span>Final interbank loss</span><strong id="loss">—</strong><small>Posted to surviving creditors</small></article><article><span>Added by propagation</span><strong id="extra-loss">—</strong><small id="extra-defaults">Beyond the direct-loss control</small></article></section>
+      <section class="panel viewer"><div class="panel-heading viewer-heading"><div><span class="step-label">02 / EXPLORE</span><h2>Network explorer</h2></div><div class="view-tabs" role="group" aria-label="Representation"><button data-view="graph" aria-pressed="true">Graph</button><button data-view="matrix" aria-pressed="false">Matrix</button><button data-view="both" aria-pressed="false">Compare</button></div></div>
+        <div class="viewer-tools"><label for="focus">Inspect bank</label><select id="focus"><option value="">All banks</option></select><span id="network-meta"></span></div>
+        <div id="view-grid" class="view-grid"><article id="graph-panel"><div class="view-title"><h3>Node–link graph</h3><span>Loan arrows · width = amount</span></div><svg id="graph" viewBox="0 0 660 420" role="img" aria-label="Directed lending network"></svg></article><article id="matrix-panel" hidden><div class="view-title"><h3>Exposure matrix</h3><span>Rows lend → columns borrow</span></div><div id="matrix-wrap" tabindex="0" role="region" aria-label="Scrollable exposure matrix"><table id="matrix"></table></div></article></div>
+        <div class="legend"><span><i class="alive"></i>Surviving</span><span><i class="new"></i>Failed this round</span><span><i class="failed"></i>Failed earlier</span><span class="legend-line">Highlighted loan = loss posted this round</span></div>
+        <div class="timeline"><button id="play" aria-label="Play cascade">▶ Play</button><div><label for="round">Round <output id="round-value">0</output><span id="round-note"></span></label><input id="round" type="range" min="0" max="3" value="0" step="1"></div><button id="last" class="subtle">Final round</button></div>
+        <p class="view-footnote">Positions and loan amounts stay fixed across rounds. Colors show failure state; highlighted loans identify this round’s posted losses. Rounds are not days.</p>
+      </section>
+      <section class="panel explanation" id="explanation"><div class="panel-heading"><h2 id="explanation-title">Round 0 · the initial event</h2><span class="step-label">03 / EXPLAIN</span></div><p id="round-explanation"></p><div id="bank-detail"></div><div class="table-scroll"><table class="data-table"><thead><tr><th>Borrower that failed</th><th>Lender affected</th><th>Loan</th><th>Loss this round</th></tr></thead><tbody id="events"></tbody></table></div></section>
+      <section class="panel" id="model-comparison"><div class="panel-heading"><h2>Two models, one starting point</h2><span class="step-label">MODEL CONTROL</span></div><p class="section-copy">The direct-loss control stops transmission after initial failures. The full cascade lets newly failed banks transmit. This is separate from the graph-versus-matrix study.</p><div class="table-scroll"><table class="data-table"><thead><tr><th>Outcome at completion</th><th>Direct loss only</th><th>Full cascade</th></tr></thead><tbody id="comparison"></tbody></table></div><div class="panel-footer"><span>Human accuracy / time advantage: <b>not evaluated</b></span><button id="export" class="subtle">Download evidence JSON ↓</button></div></section>
+    </div>
+  </div>
+  <details class="practice-drawer"><summary>Practice tasks <span>Optional recorder · not study evidence</span></summary><section class="panel rehearsal"><div class="panel-heading"><div><span class="step-label">OPTIONAL / MEASUREMENT REHEARSAL</span><h2>Try a timed reading task</h2></div><span class="pill">PRACTICE DATA ONLY</span></div><p class="section-copy">Select Graph or Matrix above, then start. Scenario controls lock and shared answer tables hide. This tests the recorder; it is not a counterbalanced analyst study. Exported rows are labeled rehearsal and must be excluded from research results.</p><div class="rehearsal-form"><div><label for="task">Task</label><select id="task"><option value="exposure">Read one directed loan amount</option><option value="secondary">Identify all secondary failures</option></select></div><button id="start-task" class="primary">Start practice task</button><button id="export-trials" class="subtle" disabled>Download practice CSV ↓</button></div><div id="task-active" hidden><p id="task-prompt"></p><form id="answer-form"><label for="answer">Your answer</label><input id="answer" required autocomplete="off"><label for="confidence">Confidence (1 = low, 5 = high)</label><select id="confidence"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select><button class="primary" type="submit">Submit answer</button><button id="cancel-task" class="subtle" type="button">Cancel</button></form></div><p id="task-feedback" role="status"></p></section>
+  </details>
+  <footer><span>ATLAS / Academic research prototype</span><span>Synthetic mechanism demonstration. No empirical visualization advantage claimed.</span><a href="/docs">Explore the API ↗</a></footer>
+</main>
+<dialog id="network-builder" aria-labelledby="builder-title">
+  <header class="builder-header"><div><p class="eyebrow">MANUAL NETWORK BUILDER</p><h2 id="builder-title">Create your network</h2><p>Define the banks and who lends to whom. Preview changes as you go.</p></div><button id="close-builder" class="icon-button" aria-label="Close network builder">✕</button></header>
+  <div class="builder-layout">
+    <section class="builder-edit">
+      <div class="builder-section-heading"><h3><span class="number-chip">1</span> Banks</h3><button id="add-bank" class="subtle">＋ Add bank</button></div>
+      <p class="hint">External assets exclude these interbank loans. Equity is the bank’s loss-absorbing capital.</p>
+      <div class="builder-table-scroll"><table class="builder-table"><thead><tr><th>ID</th><th>Name</th><th>External assets</th><th>Equity</th><th></th></tr></thead><tbody id="builder-banks"></tbody></table></div>
+      <div class="builder-section-heading loan-heading"><h3><span class="number-chip">2</span> Loans</h3><span class="hint">Lender → borrower</span></div>
+      <form id="add-loan-form" class="loan-form"><div><label for="loan-lender">Lender</label><select id="loan-lender"></select></div><span class="loan-arrow">→</span><div><label for="loan-borrower">Borrower</label><select id="loan-borrower"></select></div><div><label for="loan-amount">Amount</label><input id="loan-amount" type="number" min="0.01" step="any" value="50" required></div><button id="add-loan" class="primary" type="submit">Add loan</button></form>
+      <p id="loan-error" class="field-error" role="alert" hidden></p>
+      <div id="no-loans" class="empty-loans">No loans yet. Connect two banks using the fields above or click them in the preview.</div>
+      <div class="builder-table-scroll"><table class="builder-table" id="loan-table" hidden><thead><tr><th>Lender</th><th>Borrower</th><th>Amount</th><th></th></tr></thead><tbody id="builder-loans"></tbody></table></div>
+    </section>
+    <aside class="builder-preview"><div class="preview-top"><h3>Network preview</h3><span id="draft-count" class="pill"></span></div><p class="hint">Click a lender, then a borrower to prepare a loan.</p><svg id="draft-graph" viewBox="0 0 500 300" role="img" aria-label="Manual network preview"></svg><p id="connect-hint" role="status">Select the bank that lends first.</p>
+      <div class="accounting-preview"><h3>Balance-sheet check</h3><p>Deposits are calculated automatically:<br><b>external assets + lending − borrowing − equity</b></p><div id="accounting-rows"></div></div>
+      <div id="builder-validation" role="status"></div><p id="builder-units" class="hint"></p>
+    </aside>
+  </div>
+  <footer class="builder-footer"><span id="draft-status">Your live scenario stays unchanged until you apply.</span><div><button id="cancel-builder" class="subtle">Cancel</button><button id="apply-network" class="primary">Use this network →</button></div></footer>
+</dialog>
+</body>
+</html>

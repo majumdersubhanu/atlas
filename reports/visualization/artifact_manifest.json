@@ -1,0 +1,31 @@
+{
+  "kind": "Current visual artifacts and historical numerical snapshot; no participant results",
+  "created_utc": "2026-11-02T04:30:05.487527+00:00",
+  "platform": "Linux-7.2.13-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "files": {
+    "notebooks/04_visualization_comparison.ipynb": "961fedd7f1a1a7a9639c1c4dd17fea920e68b0402bfce14a9a4093050d216fb7",
+    "notebooks/05_visualization_study_analysis.ipynb": "ef9ed0c3ca5169886404f235aa72623a7fc24f7b247ce92ec05dbb4b539a229d",
+    "reports/visualization/04_visualization_comparison.html": "e96b1a0a46a24b3fb8ce3fe777ac7bd191534e1a18c8bdb793204c2877c0e333",
+    "reports/visualization/05_visualization_study_analysis.html": "e323e6ebfb8e5d77994ef3b044dd56ea37f89e0787198ac93451d568d42a6946",
+    "reports/visualization/browser-qa.json": "e7d4e177339d667ccd161e24f017131b7494846286da162807a7c81fa4420c49",
+    "reports/visualization/cascade_rounds.png": "7c16ef942977a4a8abfed4e0dc778e69f8eb2486af4a5b911199fa3070550d30",
+    "reports/visualization/chain_evidence.json": "e095caaed66ebe1ca75048d3590ec9234dc571c4fe8fd2a17ce860d505145cd3",
+    "reports/visualization/dashboard-dark.png": "6b2dc48749f6f1eff6b5b3b52f6666260b92adb487cf474c83fb9f400f85daa0",
+    "reports/visualization/dashboard-desktop.png": "c1e3345d669781a9bc9e948a395b1e8502ae23b9e914b23a6b653e8f64e64023",
+    "reports/visualization/dashboard-mobile.png": "9942e0dfc32740d0edd24806bc5e8a1dfb809a67e062c7bca373b66dff1c5c7a",
+    "reports/visualization/engineering_checks.csv": "9f0619e92e9bd5673865a358cd5751ea049c592c86de3b7023643761267d8d0d",
+    "reports/visualization/graph_matrix.png": "2ee6f93e4942c29fab680a981e86af2df8fa3e5541ffe1675a968c1bbf435732",
+    "reports/visualization/manual-builder-desktop.png": "d59d7d6466f7b108a6c9dc43afb2974a3e85a64beffee456dcac9f26dfaac718",
+    "reports/visualization/manual-builder-mobile.png": "19e195292c7d7ba1dbf6d69c0a3b668c6042ff3d6439840bddfa84a7fb3d3f77",
+    "reports/visualization/manual-builder-qa.json": "2c976a12c86498be9a152ab64544569318ff9d22ad8209d3bd7c21960eb0e04b",
+    "reports/visualization/recovery_sensitivity.csv": "38a774b3c7bfa9f0c712834d0f5653a164e2adb137d9045897af95e35cd9d9c3",
+    "reports/visualization/recovery_sensitivity.png": "c08ac7761ab256d40f487a4cc2b8427d1124f72e4bac013f6dc53df948ed6176",
+    "reports/visualization/summary.json": "5eb724899ffed11a745336ba4b11114977b511af981857af472306a7df70365c",
+    "src/atlas/static/app.js": "656c6d93e29ab5d5969521dce735f7983ce2d763f88dfa6a32fb17266d116a62",
+    "src/atlas/static/builder.js": "f7166372603d9859ee1b4fd71f955e2416c5f845b828881816fd406fa7152f68",
+    "src/atlas/static/index.html": "ea66a605af64b1ac9100d3a38546e39ac0f05d50a575b43d4db06f03492a0b82",
+    "src/atlas/static/styles.css": "e2a14baec150343af7d60b4334824bb28b860e169d3b7f3798ccef439b543ba3",
+    "src/atlas/static/workbench.css": "5504d43f48fac2a4c07dd37d9477edb8031c150ce8a3fdeadbec855eeb0b0099"
+  },
+  "note": "Notebook source hashes retain the pre-manual-builder experiment provenance."
+}

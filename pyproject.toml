@@ -34,7 +34,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "src/", "tests/", "scripts/", "docs/", "notebooks/", "data/",
+    "src/", "tests/", "scripts/", "docs/", "notebooks/", "data/", "frontend/",
     "README.md", "CONTRIBUTING.md", "THIRD_PARTY_NOTICES.md",
     "pyproject.toml", "uv.lock", ".python-version",
 ]

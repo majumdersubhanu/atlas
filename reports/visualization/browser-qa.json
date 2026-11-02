@@ -1,0 +1,78 @@
+{
+  "kind": "automated software verification; not participant evidence",
+  "base": "http://127.0.0.1:8030",
+  "browser": "Chromium",
+  "results": [
+    {
+      "name": "Chain loads with exact graph/matrix evidence",
+      "status": "PASS",
+      "detail": "3 nodes, 2 directed exposures; 60 direct vs 108 cascade"
+    },
+    {
+      "name": "Round trace and bank inspection",
+      "status": "PASS",
+      "detail": "Independent chain arithmetic visible by round"
+    },
+    {
+      "name": "Graph/matrix isolation and identical final results",
+      "status": "PASS",
+      "detail": "Representation toggles preserve scenario outcomes"
+    },
+    {
+      "name": "Recovery boundary and live rerun",
+      "status": "PASS",
+      "detail": "100%, exact-zero 50%, and 51% boundaries verified"
+    },
+    {
+      "name": "Branch, generated network and external shock",
+      "status": "PASS",
+      "detail": "Branch truth, generator, zero shock and common shock exercised"
+    },
+    {
+      "name": "Evidence download is a complete reproducible response",
+      "status": "PASS",
+      "detail": "Export contains scenario, dataset, hash, both model outcomes and matrix"
+    },
+    {
+      "name": "Invalid generator input cannot silently reuse an older network",
+      "status": "PASS",
+      "detail": "Invalid changes are rejected; valid retry rebuilds requested network"
+    },
+    {
+      "name": "Practice task locks conditions and exports rehearsal only",
+      "status": "PASS",
+      "detail": "Automated practice records remained browser-local and were not saved as study observations"
+    },
+    {
+      "name": "API failure is visible and retry recovers",
+      "status": "PASS",
+      "detail": "No silent failure; previous evidence flagged and retry works"
+    },
+    {
+      "name": "Desktop and mobile layouts",
+      "status": "PASS",
+      "detail": "1440px and 390px widths have no page-level horizontal overflow"
+    },
+    {
+      "name": "No browser errors or remote dashboard dependencies",
+      "status": "PASS",
+      "detail": {
+        "errors": [],
+        "remoteRequests": [
+          "https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css",
+          "https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js"
+        ]
+      }
+    },
+    {
+      "name": "Swagger and OpenAPI expose visual endpoints",
+      "status": "PASS",
+      "detail": "OpenAPI routes and rendered Swagger available"
+    },
+    {
+      "name": "Executed notebook exports work offline",
+      "status": "PASS",
+      "detail": "Code-hidden HTML opens offline with embedded figures and honest empty-study status"
+    }
+  ]
+}

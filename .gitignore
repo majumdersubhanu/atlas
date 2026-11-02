@@ -37,6 +37,7 @@ experiments/local/
 node_modules/
 browser-tests/test-results/
 browser-tests/.playwright-mcp/
+.playwright-mcp/
 presentation/.build/
 
 # Browser screenshots may show local authenticated URLs

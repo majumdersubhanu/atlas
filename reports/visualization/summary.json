@@ -1,0 +1,26 @@
+{
+  "scope": "Synthetic visual-comparison MVP; no human-performance findings",
+  "python": "3.12.16",
+  "chain_direct_loss": 60,
+  "chain_cascade_loss": 108,
+  "chain_added_loss": 48,
+  "branch_cascade_loss": 180,
+  "all_matrix_edge_checks_passed": true,
+  "human_study_status": "not evaluated",
+  "source_sha256": {
+    "__init__.py": "37af9f211c2a572d84bf9c5f8640834f60d2874ddedb686161f8acfc88926300",
+    "analysis.py": "bfc92c795ab99488f464185d13622998b610d63cc8f47c612476cf4f5180b51c",
+    "api.py": "cb263b967b292911066794b83846fec0cc8d76016d71f74e841338a9e840ece2",
+    "baseline.py": "abb6dd0a2ccbdcf11862b4bac621d723f7d88ce7806577dd822bb55e70924282",
+    "cli.py": "27dcb2572e5e0fb9f712adb304b47afe27635d612e6ef1203d8991826deb5535",
+    "engine.py": "d14aac81061cd641396b5f3e46f3545fb7a752f4fb141ce5022ad31c002d1580",
+    "generate.py": "172160420ed42bc062c72afd5c864d4edb779435f687b5ac4516125573c27ab2",
+    "market.py": "f74c9a5c7cdff2d3b5eb02349d0562315ddfe696e9e128f5d9d94e9135a1ddf5",
+    "models.py": "3ecfb8cc29c71f4ad7f009b00ba3e3e5f1f7a4858e3591f0012f2bd077034148",
+    "observed.py": "f413efe4117cea57a30325f5ab4e1060bcfdf3be8f098cf690627cf661dc6877",
+    "research.py": "1742aa69ca327fd35a50345af3347e2c7a75962929107dce2ce71097486358b5",
+    "storage.py": "7b842d364a484d02695948257d949d9cb0f247faaf26723f9efd8c7867945090",
+    "study.py": "b9b360239115938cafb270eb469c03df81818c3381aba587b35d50c5badff431",
+    "visualization.py": "a9c50e459e4a7c11f6683ecaf630dbc3f4a7c235c2c52291b344ec2d59936fb7"
+  }
+}
