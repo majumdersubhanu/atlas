@@ -9,3 +9,5 @@ React + Vite + Tailwind CSS, Radix tabs/confirmation dialogs, and React Flow.
 The new workspace replaces the old DOM-driven dashboard at `/`. Earlier browser scripts target that earlier interface and are historical checks, not validation of this React application. The new interface supports scenario settings, round playback, matrix and ledger tabs, network editing, connector-based loans, bank inspection, draft recovery, and experiment export. Combined graph/matrix and the rehearsal recorder from the earlier interface are not migrated yet.
 
 Design guidance: UI Skills `anthropics/frontend-design` and `ibelick/baseline-ui`. Dark slate surfaces, restrained blue accents, compact hierarchy, one primary canvas, inline bank inspector, explicit destructive-action confirmation. No decorative motion.
+
+Layout update: bank nodes default to circles. The Bank details checkbox expands account cards and recalculates spacing. Auto layout uses Dagre with actual node dimensions; this also runs for new simulation inputs. Compare restores graph and exposure matrix together with shared round controls. At narrow widths the two panels stack.
